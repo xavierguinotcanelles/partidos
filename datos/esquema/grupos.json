@@ -1,0 +1,35 @@
+{
+  "tabla": "grupos",
+  "fichero": "datos/grupos.csv",
+  "descripcion": "Grupos parlamentarios por legislatura.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "legislatura",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "legislaturas"
+    },
+    {
+      "nombre": "nombre",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "siglas",
+      "tipo": "texto"
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

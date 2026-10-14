@@ -1,0 +1,35 @@
+{
+  "tabla": "legislaturas",
+  "fichero": "datos/legislaturas.csv",
+  "descripcion": "Legislaturas del Congreso.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "eleccion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "elecciones"
+    },
+    {
+      "nombre": "inicio",
+      "tipo": "fecha",
+      "obligatorio": true
+    },
+    {
+      "nombre": "fin",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

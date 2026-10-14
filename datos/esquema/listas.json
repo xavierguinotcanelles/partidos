@@ -1,0 +1,61 @@
+{
+  "tabla": "listas",
+  "fichero": "datos/listas.csv",
+  "descripcion": "Candidatura × circunscripción. Lleva la denominación local si difiere y la cabeza de lista.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "candidatura",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "candidaturas"
+    },
+    {
+      "nombre": "circunscripcion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "circunscripciones"
+    },
+    {
+      "nombre": "denominacion_local",
+      "tipo": "texto"
+    },
+    {
+      "nombre": "siglas_local",
+      "tipo": "texto"
+    },
+    {
+      "nombre": "cabeza",
+      "tipo": "texto",
+      "referencia": "personas"
+    },
+    {
+      "nombre": "estado",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "confirmado",
+        "dudoso",
+        "en_disputa"
+      ]
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ],
+  "unica": [
+    [
+      "candidatura",
+      "circunscripcion"
+    ]
+  ]
+}

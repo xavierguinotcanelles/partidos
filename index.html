@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partidos · genealogía de los partidos políticos en España</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header><a href="index.html">Partidos</a> · <a href="metodologia.html">Metodología</a> · <a href="datos/">Datos</a></header>
+<main class="texto">
+<h1>Partidos</h1>
+<p>Cómo nacen, se unen, se separan y cambian de nombre los partidos, federaciones y coaliciones en España. Del presente hacia el pasado.</p>
+<p>En construcción. Cada dato publicado lleva su fuente; los criterios están en la <a href="metodologia.html">metodología</a>.</p>
+<p id="estado">Cargando datos…</p>
+</main>
+<footer>Datos: CC BY 4.0 · Código: MIT · <a href="https://github.com/xavierguinotcanelles/partidos">Fuente y correcciones</a></footer>
+<script>
+fetch("datos/organizaciones.json").then(r => r.json()).then(d => {
+  const n = Object.keys(d).length;
+  document.getElementById("estado").textContent = n ? `${n} organizaciones publicadas.` : "Todavía no hay datos publicados.";
+}).catch(() => { document.getElementById("estado").textContent = "Todavía no hay datos publicados."; });
+</script>
+</body>
+</html>

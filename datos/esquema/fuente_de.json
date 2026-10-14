@@ -1,0 +1,38 @@
+{
+  "tabla": "fuente_de",
+  "fichero": "datos/fuente_de.csv",
+  "descripcion": "Enlace fila → fuente. 'tabla' es el nombre de la tabla u 'organizaciones'; 'fila' su clave.",
+  "clave": [
+    "tabla",
+    "fila",
+    "fuente"
+  ],
+  "requiere_fuente": false,
+  "campos": [
+    {
+      "nombre": "tabla",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "fila",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "fuente",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "fuentes"
+    },
+    {
+      "nombre": "cita",
+      "tipo": "texto",
+      "descripcion": "Fragmento o localización dentro de la fuente"
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

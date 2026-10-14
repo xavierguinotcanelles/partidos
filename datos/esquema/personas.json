@@ -1,0 +1,30 @@
+{
+  "tabla": "personas",
+  "fichero": "datos/personas.csv",
+  "descripcion": "Personas con algún cargo o cabeza de lista.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "nombre",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "wikidata",
+      "tipo": "texto",
+      "patron": "^(Q\\d+)?$"
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

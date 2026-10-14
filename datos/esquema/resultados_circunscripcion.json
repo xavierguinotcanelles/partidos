@@ -1,0 +1,59 @@
+{
+  "tabla": "resultados_circunscripcion",
+  "fichero": "datos/resultados_circunscripcion.csv",
+  "descripcion": "Totales por elección y circunscripción: censo, votantes, válidos, blancos, nulos. Los blancos cuentan para la barrera del Congreso.",
+  "clave": [
+    "eleccion",
+    "circunscripcion"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "eleccion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "elecciones"
+    },
+    {
+      "nombre": "circunscripcion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "circunscripciones"
+    },
+    {
+      "nombre": "censo",
+      "tipo": "entero",
+      "obligatorio": true
+    },
+    {
+      "nombre": "votantes",
+      "tipo": "entero",
+      "obligatorio": true
+    },
+    {
+      "nombre": "validos",
+      "tipo": "entero",
+      "obligatorio": true
+    },
+    {
+      "nombre": "blancos",
+      "tipo": "entero",
+      "obligatorio": true
+    },
+    {
+      "nombre": "nulos",
+      "tipo": "entero",
+      "obligatorio": true
+    },
+    {
+      "nombre": "estado",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "confirmado",
+        "dudoso",
+        "en_disputa"
+      ]
+    }
+  ]
+}

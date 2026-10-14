@@ -1,0 +1,88 @@
+{
+  "tabla": "cargos",
+  "fichero": "datos/cargos.csv",
+  "descripcion": "Cargos de personas en organizaciones, con intervalo.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "persona",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "personas"
+    },
+    {
+      "nombre": "organizacion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "organizaciones"
+    },
+    {
+      "nombre": "tipo",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "lider",
+        "presidente",
+        "secretario_general",
+        "coordinador",
+        "portavoz",
+        "candidato_presidencia",
+        "otro"
+      ]
+    },
+    {
+      "nombre": "tipo_detalle",
+      "tipo": "texto"
+    },
+    {
+      "nombre": "desde",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "desde_precision",
+      "tipo": "texto",
+      "valores": [
+        "exacta",
+        "mes",
+        "anio",
+        "aprox"
+      ]
+    },
+    {
+      "nombre": "hasta",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "hasta_precision",
+      "tipo": "texto",
+      "valores": [
+        "exacta",
+        "mes",
+        "anio",
+        "aprox"
+      ]
+    },
+    {
+      "nombre": "estado",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "confirmado",
+        "dudoso",
+        "en_disputa"
+      ]
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

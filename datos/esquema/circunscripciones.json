@@ -1,0 +1,43 @@
+{
+  "tabla": "circunscripciones",
+  "fichero": "datos/circunscripciones.csv",
+  "descripcion": "Circunscripciones del Congreso (provincias y ciudades autónomas). Una fila por circunscripción y periodo de vigencia.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true,
+      "patron": "^[a-z0-9_]+$"
+    },
+    {
+      "nombre": "nombre",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "tipo",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "provincia",
+        "ciudad_autonoma"
+      ]
+    },
+    {
+      "nombre": "vigente_desde",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "vigente_hasta",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

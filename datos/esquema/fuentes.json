@@ -1,0 +1,80 @@
+{
+  "tabla": "fuentes",
+  "fichero": "datos/fuentes.csv",
+  "descripcion": "Catálogo de fuentes. Toda fila de las demás tablas apunta aquí a través de fuente_de.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": false,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "tipo",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "boe",
+        "interior",
+        "registro_partidos",
+        "congreso",
+        "jec",
+        "wikidata",
+        "academica",
+        "prensa",
+        "organizacion",
+        "otra"
+      ]
+    },
+    {
+      "nombre": "caracter",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "primaria",
+        "secundaria",
+        "externa"
+      ]
+    },
+    {
+      "nombre": "titulo",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "url",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "fecha_publicacion",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "fecha_consulta",
+      "tipo": "fecha",
+      "obligatorio": true
+    },
+    {
+      "nombre": "copia",
+      "tipo": "texto",
+      "descripcion": "Ruta en fuentes/ o nombre del adjunto de release; vacío para prensa"
+    },
+    {
+      "nombre": "archivo",
+      "tipo": "texto",
+      "descripcion": "URL de la copia archivada (Wayback)"
+    },
+    {
+      "nombre": "licencia",
+      "tipo": "texto"
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

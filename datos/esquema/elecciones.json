@@ -1,0 +1,89 @@
+{
+  "tabla": "elecciones",
+  "fichero": "datos/elecciones.csv",
+  "descripcion": "Elecciones cubiertas. La regla electoral se describe aquí; el reparto de escaños por circunscripción va en reparto_escanos.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true,
+      "patron": "^\\d{4}-\\d{2}-\\d{2}-[a-z_]+$"
+    },
+    {
+      "nombre": "tipo",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "generales",
+        "autonomicas",
+        "municipales",
+        "europeas"
+      ]
+    },
+    {
+      "nombre": "institucion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "congreso"
+      ]
+    },
+    {
+      "nombre": "fecha",
+      "tipo": "fecha",
+      "obligatorio": true
+    },
+    {
+      "nombre": "formula",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "dhondt",
+        "sainte_lague",
+        "hare"
+      ]
+    },
+    {
+      "nombre": "barrera_pct",
+      "tipo": "decimal",
+      "obligatorio": true
+    },
+    {
+      "nombre": "barrera_base",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "validos",
+        "emitidos",
+        "a_candidaturas"
+      ]
+    },
+    {
+      "nombre": "barrera_ambito",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "circunscripcion",
+        "estatal"
+      ]
+    },
+    {
+      "nombre": "escanos_total",
+      "tipo": "entero",
+      "obligatorio": true
+    },
+    {
+      "nombre": "convocatoria_norma",
+      "tipo": "texto",
+      "descripcion": "Cita de la norma de convocatoria, p. ej. Real Decreto 806/2026"
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

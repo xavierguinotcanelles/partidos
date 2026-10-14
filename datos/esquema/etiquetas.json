@@ -1,0 +1,86 @@
+{
+  "tabla": "etiquetas",
+  "fichero": "datos/etiquetas.csv",
+  "descripcion": "Etiquetas ideológicas atribuidas. Nunca una etiqueta sin atribución y fuente (ADR-0006).",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "organizacion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "organizaciones"
+    },
+    {
+      "nombre": "etiqueta",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "atribucion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "autodefinicion",
+        "externa",
+        "historiografia",
+        "prensa"
+      ]
+    },
+    {
+      "nombre": "atribuida_por",
+      "tipo": "texto",
+      "obligatorio": true,
+      "descripcion": "Quién atribuye: 'estatutos 2021', 'CHES 2019', autor y obra…"
+    },
+    {
+      "nombre": "desde",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "desde_precision",
+      "tipo": "texto",
+      "valores": [
+        "exacta",
+        "mes",
+        "anio",
+        "aprox"
+      ]
+    },
+    {
+      "nombre": "hasta",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "hasta_precision",
+      "tipo": "texto",
+      "valores": [
+        "exacta",
+        "mes",
+        "anio",
+        "aprox"
+      ]
+    },
+    {
+      "nombre": "estado",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "confirmado",
+        "dudoso",
+        "en_disputa"
+      ]
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

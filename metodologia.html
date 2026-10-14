@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodología · Partidos</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header><a href="index.html">Partidos</a> · <a href="metodologia.html">Metodología</a> · <a href="datos/">Datos</a></header>
+<main class="texto">
+<h1>Metodología</h1>
+<p>Criterios editoriales del proyecto, tal y como están decididos. Cada apartado es una decisión registrada (ADR) y numerada; solo se publican las vigentes.</p>
+<!-- ADR-0003-fuentes-neutralidad.md -->
+<h2>ADR-0003 · Fuentes, procedencia y neutralidad</h2>
+<h2>Contexto</h2>
+<p>Una web divulgativa sobre partidos políticos solo es útil si quien la consulta puede comprobar cada dato y conocer los criterios con que se ha organizado. El proyecto cubre todo el arco político, con imparcialidad declarada y comprobable.</p>
+<h2>Decisión</h2>
+<h3>Fuentes</h3>
+<ol>
+<li><strong>Primero las fuentes primarias oficiales</strong>; las secundarias solo como semilla o contexto, y siempre verificadas contra una primaria antes de publicar.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Para qué</th>
+<th>Carácter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ministerio del Interior, resultados electorales</td>
+<td>Votos, escaños, censo y participación por circunscripción desde 1977</td>
+<td>Primaria</td>
+</tr>
+<tr>
+<td>BOE: decretos de convocatoria, candidaturas presentadas y proclamadas, acuerdos de la Junta Electoral Central</td>
+<td>Fechas, escaños por circunscripción, composición de coaliciones y listas, resultados oficiales</td>
+<td>Primaria</td>
+</tr>
+<tr>
+<td>Ministerio del Interior, Registro de Partidos Políticos</td>
+<td>Inscripción, tipo jurídico y fechas de partidos y federaciones</td>
+<td>Primaria</td>
+</tr>
+<tr>
+<td>Congreso de los Diputados</td>
+<td>Diputados, grupos parlamentarios y sus cambios</td>
+<td>Primaria</td>
+</tr>
+<tr>
+<td>Documentos de la propia organización (estatutos, web oficial)</td>
+<td>Autodefinición, liderazgos, nombre</td>
+<td>Primaria para lo que la organización dice de sí misma</td>
+</tr>
+<tr>
+<td>Wikidata</td>
+<td>Semilla estructurada de relaciones e identificadores</td>
+<td>Secundaria; nunca se publica sin verificar</td>
+</tr>
+<tr>
+<td>Codificaciones académicas (Chapel Hill, ParlGov, Manifesto Project)</td>
+<td>Posiciones ideológicas codificadas por terceros</td>
+<td>Externa; se citan como tales (ADR-0006)</td>
+</tr>
+<tr>
+<td>Prensa</td>
+<td>Contexto y negociaciones; única fuente disponible para hechos recientes hasta que exista una primaria</td>
+<td>Secundaria; obliga a <code>dudoso</code> si no hay primaria</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Toda fila publicada apunta a una o varias fuentes</strong>, con la localización dentro de la fuente cuando sea posible. Sin fuente no hay fila: lo impide la integración continua.</li>
+<li><strong>Copia de cada fuente</strong> antes de leerla: documentos oficiales y datos reutilizables se guardan en el repositorio de trabajo (o como adjuntos si pesan); de la prensa solo URL, enlace a copia archivada y cita breve, por derechos de autor. Nunca texto completo de prensa en la web pública.</li>
+<li><strong>Fecha con precisión e incertidumbre explícita</strong>: cada hecho fechado declara si la fecha es exacta, de mes, de año o aproximada; cada hecho declara si está confirmado, es dudoso o está en disputa entre fuentes. La web lo enseña; el proyecto no resuelve disputas por criterio propio.</li>
+</ol>
+<h3>Neutralidad</h3>
+<ol>
+<li><strong>Las decisiones editoriales son ADR públicos.</strong> Qué cuenta como sucesor de qué, cómo se registra un cambio de nombre, una refundación o una confluencia territorial, qué se publica y qué no: todo queda escrito, numerado y fechado en esta Metodología, y solo se cambia con un nuevo ADR que sustituya o enmiende al anterior.</li>
+<li><strong>El proyecto no asigna posiciones ideológicas propias.</strong> Toda etiqueta que aparece está atribuida: a la propia organización, a una codificación externa citada o a historiografía citada (ADR-0006).</li>
+<li><strong>Las estimaciones nunca se presentan como datos.</strong> Lo que no sale de una fuente se marca como estimación, con sus supuestos a la vista (ADR-0004).</li>
+<li><strong>Logos: no se usan.</strong> Cada organización se identifica por color e iniciales. El color se elige por una regla documentada en la ficha (el que la organización usa en su propia identidad, con fuente; si no consta, uno neutro asignado).</li>
+<li><strong>Todo el arco político, mismo tratamiento</strong>: mismas tablas, mismas reglas, misma profundidad objetivo. Los ejemplos del diseño no condicionan la cobertura.</li>
+<li><strong>Corrección abierta</strong>: cualquier persona puede señalar un error desde la web pública, aportando fuente. Las correcciones aceptadas se registran con su fuente como cualquier otro dato.</li>
+</ol>
+<h2>Consecuencias</h2>
+<ul>
+<li>Las elecciones recientes se publican primero con lo que dice el BOE; el contexto narrativo (negociaciones, motivos) llega después o no llega.</li>
+<li>La cobertura real de cada fuente oficial hacia atrás en el tiempo está por comprobar; es la primera tarea del piloto y puede obligar a marcar como <code>dudoso</code> tramos enteros.</li>
+<li>Publicar esta Metodología convierte la neutralidad en algo verificable; también en algo criticable, que es el objetivo.</li>
+</ul>
+<!-- ADR-0004-simulador.md -->
+<h2>ADR-0004 · Simulador electoral: lo exacto separado de los supuestos</h2>
+<h2>Contexto</h2>
+<p>La web incluirá una herramienta para recalcular resultados del Congreso bajo otras reglas o combinaciones de candidaturas. El riesgo es presentar una conjetura como un dato. La regla es separar siempre dos clases de cálculo y decirlo en pantalla.</p>
+<h2>Decisión</h2>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Ejemplos</th>
+<th>Carácter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Recálculo mecánico</strong></td>
+<td>Otra fórmula (Sainte-Laguë en vez de D'Hondt), sin barrera o con otra, circunscripción única, otro reparto de escaños por provincia</td>
+<td><strong>Exacto</strong>: aritmética sobre los votos oficiales; el parámetro cambiado se muestra</td>
+</tr>
+<tr>
+<td><strong>Indicadores</strong></td>
+<td>Votos del último escaño en cada circunscripción, votos por escaño, votos sin escaño, índice de Gallagher, número efectivo de partidos</td>
+<td><strong>Exacto</strong></td>
+</tr>
+<tr>
+<td><strong>Contrafactual de unión</strong></td>
+<td>Dos candidaturas presentadas juntas</td>
+<td><strong>Depende de un supuesto de comportamiento</strong>, que se muestra</td>
+</tr>
+<tr>
+<td><strong>Contrafactual de separación</strong></td>
+<td>Una coalición dividida en sus componentes</td>
+<td><strong>Depende de un supuesto de reparto</strong>, que se muestra</td>
+</tr>
+</tbody>
+</table>
+<p>Reglas del contrafactual:</p>
+<ol>
+<li>Por defecto, <strong>suma simple con el supuesto escrito en pantalla</strong>: «si el 100 % de los votantes de A y de B hubiese votado a A+B». Un control de fidelidad permite fijar qué porcentaje se mantiene y adónde va el resto.</li>
+<li>En la separación <strong>no hay reparto automático por defecto</strong>: la proporción en una elección anterior rara vez existe o es comparable. El usuario fija los porcentajes o no hay cálculo.</li>
+<li>Escenarios con fuente (p. ej. transferencias de voto de una encuesta postelectoral) solo si existe una fuente que lo permita; se citan y se marcan como <strong>estimación ajena</strong>.</li>
+<li><strong>Imparcialidad</strong>: ningún escenario destacado ni precargado. Cualquier combinación de cualquier candidatura, compartible por URL.</li>
+<li>La barrera se aplica como dice la ley de cada elección: en el Congreso, 3 % de los votos válidos de la circunscripción, blancos incluidos (LOREG, art. 163). Los empates se resuelven por mayor número de votos y, si persisten, se indica.</li>
+</ol>
+<p>Alcance: Congreso de los Diputados, elecciones desde 1977. El Senado y las elecciones anteriores a 1977 usan otros sistemas y quedan fuera. Ejecución en el navegador sobre los JSON publicados; no hay servidor.</p>
+<h2>Consecuencias</h2>
+<ul>
+<li>El código del reparto (<code>simulador/reparto.py</code>) tiene tests con el ejemplo del artículo 163 de la LOREG y es la referencia también para la versión en el navegador: ambas deben dar lo mismo.</li>
+<li>Un contrafactual nunca aparece en la web sin su frase de supuesto visible junto al resultado.</li>
+</ul>
+<!-- ADR-0006-etiquetas-linaje.md -->
+<h2>ADR-0006 · Etiquetas ideológicas atribuidas y linaje estructural</h2>
+<h2>Contexto</h2>
+<p>A quien navega le ayuda saber que un partido es, o se considera, conservador, socialdemócrata o nacionalista. Pero el proyecto no asigna posiciones ideológicas propias (ADR-0003). Además, medir «fragmentación por espacio político» exigiría decidir qué partidos forman un espacio, que es en sí una clasificación ideológica.</p>
+<h2>Decisión</h2>
+<h3>Etiquetas: siempre atribuidas</h3>
+<ol>
+<li>Una etiqueta ideológica se publica <strong>solo con su atribución y su fuente</strong>: quién dice que la organización es eso, y dónde.</li>
+<li>Atribuciones admitidas, que la web muestra literalmente:</li>
+<li><strong>autodefinicion</strong>: la propia organización (estatutos, web oficial, programa). Se presenta como «se define como…».</li>
+<li><strong>externa</strong>: una codificación de terceros con metodología publicada (Chapel Hill Expert Survey, ParlGov, Manifesto Project u otra que se cite). Se presenta como «clasificado por X (año) como…», con el valor tal cual lo publica la fuente.</li>
+<li><strong>historiografia</strong>: obra académica citada (autor, título, año, página). Se presenta como «según X…».</li>
+<li><strong>prensa</strong>: solo para organizaciones recientes sin autodefinición ni codificación disponible, marcada <code>dudoso</code>, y sustituida en cuanto exista otra.</li>
+<li>Varias atribuciones pueden coexistir y contradecirse; se muestran todas con su intervalo de vigencia. El proyecto no elige entre ellas ni las resume.</li>
+<li>Ninguna etiqueta se hereda: la de una organización no se aplica a sus escisiones, sucesoras ni coaligadas.</li>
+</ol>
+<h3>Linaje: estructural, sin ideología</h3>
+<ol>
+<li>El <strong>linaje</strong> de una organización es la componente conexa del grafo de relaciones (escisión, fusión, absorción, refundación, renombre, sucesión, pertenencia). Se calcula; no se decide. No usa etiquetas.</li>
+<li>La <strong>tasa de fragmentación</strong> y cualquier indicador de ruptura se calculan por linaje y por tipo de relación (ADR-0002, principio 5), nunca por «espacio político».</li>
+<li>Si se publica una agrupación por familias ideológicas, se hace solo a partir de una codificación externa citada, como capa opcional y etiquetada, nunca como organización por defecto de la web.</li>
+</ol>
+<h2>Consecuencias</h2>
+<ul>
+<li>Las elecciones recientes mostrarán menos etiquetas (no hay codificación externa aún) y más autodefiniciones.</li>
+<li>Una etiqueta sin <code>atribucion</code> y <code>atribuida_por</code> no pasa la validación de datos.</li>
+<li>La discusión sobre «a qué espacio pertenece X» queda fuera del proyecto por diseño; lo que el proyecto ofrece es el grafo y las atribuciones para que cada cual juzgue.</li>
+</ul>
+</main>
+<footer>Datos: CC BY 4.0 · Código: MIT · <a href="https://github.com/xavierguinotcanelles/partidos">Fuente y correcciones</a></footer>
+</body>
+</html>

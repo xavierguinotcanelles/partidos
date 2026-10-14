@@ -1,0 +1,111 @@
+{
+  "entidad": "organizaciones",
+  "fichero": "datos/organizaciones/<id>.yaml",
+  "descripcion": "Ficha de organización. El id es el nombre del fichero. Tipos: partido, federación, coalición electoral, agrupación de electores, plataforma sin forma jurídica.",
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true,
+      "patron": "^[a-z0-9_]+$"
+    },
+    {
+      "nombre": "nombre",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "siglas",
+      "tipo": "texto"
+    },
+    {
+      "nombre": "tipo",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "partido",
+        "federacion",
+        "coalicion",
+        "agrupacion_electores",
+        "plataforma"
+      ]
+    },
+    {
+      "nombre": "ambito",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "estatal",
+        "autonomico",
+        "provincial",
+        "local",
+        "supraestatal"
+      ]
+    },
+    {
+      "nombre": "alta",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "alta_precision",
+      "tipo": "texto",
+      "valores": [
+        "exacta",
+        "mes",
+        "anio",
+        "aprox"
+      ]
+    },
+    {
+      "nombre": "baja",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "baja_precision",
+      "tipo": "texto",
+      "valores": [
+        "exacta",
+        "mes",
+        "anio",
+        "aprox"
+      ]
+    },
+    {
+      "nombre": "registro",
+      "tipo": "texto",
+      "descripcion": "Número o referencia de inscripción en el Registro de Partidos Políticos"
+    },
+    {
+      "nombre": "color",
+      "tipo": "texto",
+      "patron": "^(#[0-9a-fA-F]{6})?$",
+      "descripcion": "Color de identificación en la web; su elección se documenta en nota o fuente"
+    },
+    {
+      "nombre": "wikidata",
+      "tipo": "texto",
+      "patron": "^(Q\\d+)?$"
+    },
+    {
+      "nombre": "estado",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "confirmado",
+        "dudoso",
+        "en_disputa"
+      ]
+    },
+    {
+      "nombre": "fuentes",
+      "tipo": "lista",
+      "referencia": "fuentes",
+      "descripcion": "Ids de fuentes; alternativa a filas en fuente_de (al menos una de las dos)"
+    },
+    {
+      "nombre": "notas",
+      "tipo": "texto"
+    }
+  ]
+}

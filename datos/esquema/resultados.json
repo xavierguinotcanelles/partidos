@@ -1,0 +1,37 @@
+{
+  "tabla": "resultados",
+  "fichero": "datos/resultados.csv",
+  "descripcion": "Votos y escaños de cada lista.",
+  "clave": [
+    "lista"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "lista",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "listas"
+    },
+    {
+      "nombre": "votos",
+      "tipo": "entero",
+      "obligatorio": true
+    },
+    {
+      "nombre": "escanos",
+      "tipo": "entero",
+      "obligatorio": true
+    },
+    {
+      "nombre": "estado",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "confirmado",
+        "dudoso",
+        "en_disputa"
+      ]
+    }
+  ]
+}

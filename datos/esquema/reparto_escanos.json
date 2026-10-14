@@ -1,0 +1,29 @@
+{
+  "tabla": "reparto_escanos",
+  "fichero": "datos/reparto_escanos.csv",
+  "descripcion": "Escaños asignados a cada circunscripción en cada elección (decreto de convocatoria).",
+  "clave": [
+    "eleccion",
+    "circunscripcion"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "eleccion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "elecciones"
+    },
+    {
+      "nombre": "circunscripcion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "circunscripciones"
+    },
+    {
+      "nombre": "escanos",
+      "tipo": "entero",
+      "obligatorio": true
+    }
+  ]
+}

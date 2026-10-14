@@ -1,0 +1,57 @@
+{
+  "tabla": "candidaturas",
+  "fichero": "datos/candidaturas.csv",
+  "descripcion": "Una candidatura por elección y organización que la presenta (partido, federación, coalición o agrupación). La variación territorial va en listas.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "eleccion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "elecciones"
+    },
+    {
+      "nombre": "organizacion",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "organizaciones"
+    },
+    {
+      "nombre": "denominacion",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "siglas",
+      "tipo": "texto"
+    },
+    {
+      "nombre": "estado",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "confirmado",
+        "dudoso",
+        "en_disputa"
+      ]
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ],
+  "unica": [
+    [
+      "eleccion",
+      "organizacion"
+    ]
+  ]
+}

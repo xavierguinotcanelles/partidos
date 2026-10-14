@@ -1,0 +1,91 @@
+{
+  "tabla": "relaciones",
+  "fichero": "datos/relaciones.csv",
+  "descripcion": "Relaciones con fecha entre organizaciones. Es el núcleo del modelo. 'ambito' restringe una coalición a ciertas circunscripciones (vacío = todas).",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": true,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "origen",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "organizaciones"
+    },
+    {
+      "nombre": "destino",
+      "tipo": "texto",
+      "obligatorio": true,
+      "referencia": "organizaciones"
+    },
+    {
+      "nombre": "tipo",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "miembro_de",
+        "coaligada_en",
+        "escision_de",
+        "fusion_en",
+        "absorcion_por",
+        "refundacion_en",
+        "renombre_a",
+        "sucesion_de"
+      ]
+    },
+    {
+      "nombre": "ambito",
+      "tipo": "lista",
+      "referencia": "circunscripciones",
+      "separador": ";"
+    },
+    {
+      "nombre": "desde",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "desde_precision",
+      "tipo": "texto",
+      "valores": [
+        "exacta",
+        "mes",
+        "anio",
+        "aprox"
+      ]
+    },
+    {
+      "nombre": "hasta",
+      "tipo": "fecha"
+    },
+    {
+      "nombre": "hasta_precision",
+      "tipo": "texto",
+      "valores": [
+        "exacta",
+        "mes",
+        "anio",
+        "aprox"
+      ]
+    },
+    {
+      "nombre": "estado",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "confirmado",
+        "dudoso",
+        "en_disputa"
+      ]
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}
