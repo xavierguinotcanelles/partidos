@@ -1,0 +1,19 @@
+id: upn
+nombre: "Unión del Pueblo Navarro"
+siglas: "UPN"
+tipo: partido
+ambito: autonomico
+alta: "1979-01-05"
+alta_precision: exacta
+color: "#00599B"
+wikidata: Q1432791
+estado: dudoso
+fuentes:
+  - registro-descarga-2026-10-17
+  - wikidata-q1432791-upn
+  - wikidata-q45813861-upn-pp
+  - interior-02197903-tota
+  - interior-02198210-tota
+  - interior-02198606-tota
+  - interior-02198910-tota
+notas: "Registro de Partidos (descarga 2026-10-17): «UNION DEL PUEBLO NAVARRO (U.P.N.)», Plaza Principe de Viana, 1-4º Derecha, Pamplona/Iruña (Navarra), inscrita el 05/01/1979; `alta` es esa fecha de inscripción (Wikidata, P571: 1979, año). La descarga no trae tipo ni número de inscripción: tipo y `registro` pendientes del Registro (ADR-0021). Candidatura propia en 1979 (Interior, fichero 03, código 000069 `UPN`). Con AP en 1982 (`UPN-AP-PDP`) y 1986 (`AP-PL-UPN`, «COALICION POPULAR»), y con el PP en las generales de 1989 a 2016 (`UPN-PP`): ver sus relaciones `coaligada_en`. En 2019 concurrió dentro de Navarra Suma (Interior 2019, código `NA+`; Wikidata Q62060692 la da con UPN, PP y Ciudadanos), que esta tanda no carga. Color: P465 de Wikidata. Ámbito: Navarra."

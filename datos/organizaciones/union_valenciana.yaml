@@ -1,0 +1,18 @@
+id: union_valenciana
+nombre: "Unió Valenciana"
+siglas: "UV"
+tipo: partido
+ambito: autonomico
+alta: "1982-08-30"
+alta_precision: exacta
+baja: "2011"
+baja_precision: anio
+color: "#1F4473"
+wikidata: Q3087523
+estado: dudoso
+fuentes:
+  - registro-descarga-2026-10-17
+  - wikidata-q3087523-uv
+  - interior-02198210-tota
+  - interior-02198606-tota
+notas: "Registro de Partidos (descarga 2026-10-17): «UNIO VALENCIANA (UV)», Plaça del Ayuntament, nº 13 - 2on 2ª, València, inscrita el 30/08/1982; `alta` es esa fecha (coincide con P571 de Wikidata). Baja 2011: solo Wikidata (P576); la inscripción sigue en la descarga, así que baja, tipo y número quedan pendientes del Registro (ADR-0021). En 1982 con AP y el PDP en Alicante, Castellón y Valencia (Interior 1982, fichero 03, código 000008 `AP-PDP-UV`); candidatura propia en 1986, 1989, 1993, 1996 y 2000 («UNIO VALENCIANA»). Color: P465 de Wikidata. Ámbito: Comunidad Valenciana."

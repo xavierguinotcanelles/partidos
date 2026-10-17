@@ -1,0 +1,28 @@
+id: par
+nombre: "Partido Aragonés"
+siglas: "PAR"
+tipo: partido
+ambito: autonomico
+alta: "1978-02-03"
+alta_precision: exacta
+color: "#FFCC66"
+wikidata: Q2054574
+estado: dudoso
+nombres:
+  - nombre: "Partido Aragonés Regionalista"
+    siglas: "PAR"
+    hasta: "1990"
+    hasta_precision: aprox
+  - nombre: "Partido Aragonés"
+    siglas: "PAR"
+    desde: "1993"
+    desde_precision: aprox
+justificacion: par_identidad
+fuentes:
+  - registro-descarga-2026-10-17
+  - wikidata-q2054574-par
+  - interior-02197903-tota
+  - interior-02198210-tota
+  - interior-02198910-tota
+  - interior-02199306-tota
+notas: "Registro de Partidos (descarga 2026-10-17): «PARTIDO ARAGONES (PAR)», c/ Coso nº 87, bajo, Zaragoza, inscrita el 03/02/1978; `alta` es esa fecha (Wikidata, P571: 1978-01, mes). Hay además una inscripción «PARTIDO ARAGONES REGIONALISTA», Paseo Sagasta, 20, Zaragoza, del 03/05/1990, que ninguna fuente copiada une a esta: pendiente del Registro (ADR-0021), como el tipo y el número de inscripción. Nombre en las candidaturas de Interior: «PARTIDO ARAGONES REGIONALISTA» en 1979, 1986 y 1989; «PARTIDO ARAGONES» desde 1993; las fechas del cambio son cotas de esas candidaturas (`aprox`). Con AP en 1982 (`AP-PDP-PAR`) y con el PP en 1996 y de 2011 a 2016 (`PP-PAR`): ver sus relaciones `coaligada_en`. Candidatura propia en 1979, 1986, 1989, 1993, 2000, 2004, 2008 y 2023. Color: P465 de Wikidata. Ámbito: Aragón."

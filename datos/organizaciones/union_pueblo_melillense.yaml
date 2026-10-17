@@ -1,0 +1,16 @@
+id: union_pueblo_melillense
+nombre: "Unión del Pueblo Melillense"
+siglas: "UPM"
+tipo: partido
+ambito: autonomico
+alta: "1985-06-26"
+alta_precision: exacta
+baja: "2003"
+baja_precision: anio
+wikidata: Q6157182
+estado: dudoso
+fuentes:
+  - registro-descarga-2026-10-17
+  - wikidata-q6157182-upm
+  - interior-02200003-tota
+notas: "Registro de Partidos (descarga 2026-10-17): «UNION DEL PUEBLO MELILLENSE (UPM)», C/ Ejercito Español, 7, 1º Dcha., Melilla, inscrita el 26/06/1985; `alta` es esa fecha (Wikidata, P571: 1985, año). Baja 2003: solo Wikidata (P576); el partido sigue en la descarga del Registro, así que baja, tipo y número quedan pendientes del Registro (ADR-0021). Con el PP en las generales de 2000 en Melilla (Interior 2000, fichero 03, código 000117 `PP-UPM` «PP EN COALICION CON UPM»). Ámbito: Melilla (ciudad autónoma)."

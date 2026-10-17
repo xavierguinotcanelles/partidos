@@ -1,0 +1,16 @@
+id: extremadura_unida
+nombre: "Extremadura Unida"
+siglas: "EU"
+tipo: partido
+ambito: autonomico
+alta: "1981-02-13"
+alta_precision: exacta
+color: "#085500"
+wikidata: Q3330925
+estado: dudoso
+fuentes:
+  - registro-descarga-2026-10-17
+  - wikidata-q3330925-extremadura-unida
+  - interior-02198210-tota
+  - interior-02201111-tota
+notas: "Registro de Partidos (descarga 2026-10-17): «EXTREMADURA UNIDA (EXTREMADURA UNIDA)», C/ Jose Luis Cotallo, 3-bajo Izqda., Cáceres, inscrita el 13/02/1981; `alta` es esa fecha (Wikidata, P571: 1980, año). Tipo y número de inscripción pendientes del Registro (ADR-0021). Candidatura propia en varias generales, entre otras 1982, 1986 y 2000 (Interior, `EU` «EXTREMADURA UNIDA», Badajoz y Cáceres); en 2011, con el PP en Badajoz (`P.P-E.U.`) y Cáceres (`PP-EU`). Color: P465 de Wikidata. Ámbito: Extremadura."

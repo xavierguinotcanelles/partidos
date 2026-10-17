@@ -1,0 +1,16 @@
+id: centristas_de_galicia
+nombre: "Centristas de Galicia"
+siglas: "CdG"
+tipo: partido
+ambito: autonomico
+alta: "1985"
+alta_precision: anio
+baja: "1991"
+baja_precision: anio
+color: "#0EB2D5"
+wikidata: Q3395246
+estado: dudoso
+fuentes:
+  - wikidata-q3395246-centristas-galicia
+  - interior-02198910-tota
+notas: "Alta (1985) y baja (1991): solo Wikidata (P571/P576), sin contrastar; no aparece en la descarga del Registro de Partidos del 2026-10-17 (ni como «CENTRISTAS DE GALICIA»): pendiente del Registro (ADR-0021). Con el PP en Ourense en las generales de 1989 (Interior 1989, fichero 03, código 000098 `PP-C DE G` «PARTIDO POPULAR CENTRISTAS DE GALICIA», acumulada a 000002 PP). En 1986 Interior da en Galicia la candidatura 000010 `AP-PDP-PL-C` «COALICION POPULAR», con la sigla cortada: ninguna fuente copiada dice qué es la «C», y no se carga relación. Color: P465 de Wikidata. Ámbito: Galicia."

@@ -1,0 +1,30 @@
+id: foro
+nombre: "Foro Asturias"
+siglas: "FORO"
+tipo: partido
+ambito: autonomico
+alta: "2011-01-18"
+alta_precision: exacta
+color: "#0082CA"
+wikidata: Q1437906
+estado: dudoso
+nombres:
+  - nombre: "Foro de Ciudadanos"
+    siglas: "FAC"
+    desde: "2011"
+    desde_precision: aprox
+    hasta: "2011"
+    hasta_precision: aprox
+  - nombre: "Foro Asturias"
+    siglas: "FORO"
+    desde: "2015"
+    desde_precision: aprox
+justificacion: foro_identidad
+fuentes:
+  - acad-tolivar-2011-foro-asturias
+  - acad-buznego-2015-asturias
+  - wikidata-q1437906-foro
+  - registro-descarga-2026-10-17
+  - interior-02201111-tota
+  - interior-02201512-tota
+notas: "Alta 18-01-2011: fecha de constitución que da Tolivar (2011, Informe Comunidades Autónomas 2011, pág. 267: «constituido el 18 de enero de 2011»); Wikidata (P571) da el 19-01-2011. Nace de la salida de Francisco Álvarez-Cascos del PP: ver la relación `escision_de` pp. Registro de Partidos (descarga 2026-10-17): «FORO ASTURIAS (FORO ASTURIAS)», C/ Uría, 17, entresuelo izquierda, Oviedo, inscrita el 04/02/2011; la descarga no trae histórico de denominaciones, tipo ni número: pendiente del Registro (ADR-0021). En las generales de 2011 concurre como «FORO DE CIUDADANOS» (`FAC`, Interior 2011, fichero 03, código 000060, en Madrid y Asturias); de 2015 a 2019, con el PP (`PP-FORO` «PARTIDO POPULAR-FORO»). Las fechas del cambio de nombre son cotas de las candidaturas (`aprox`). Wikidata (P807) lo da como separado de Q13147850. Color: P465 de Wikidata. Ámbito: Asturias."
