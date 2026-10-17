@@ -201,6 +201,251 @@
 <li><code>fuentes/README.md</code> gana la carpeta <code>organizaciones/</code> (documentos propios); <code>datos/fuentes.csv</code> usa <code>tipo: organizacion</code> y <code>tipo: academica</code> con <code>caracter</code> según ADR-0003.</li>
 <li>Primera tanda de F1.2: el validador (regla y tests); después los linajes (PLAN F1.2).</li>
 </ul>
+<!-- ADR-0022-genealogia-como-historiador.md -->
+<h2>ADR-0022 · La genealogía se lee como historiador, con justificación publicada, y los datos permiten navegar en el tiempo y con zoom</h2>
+<h2>Contexto</h2>
+<p>Decisión de Xavier (#81, <code>confirmo</code> del 17-10-2026; criterio editorial y alcance de la web: su lista cerrada). En la tanda #72 la historiografía decía «escisión» y la relación Más Madrid → Podemos quedó <code>dudoso</code> porque <code>escision_de</code> se leyó como ruptura formal de una organización. Con esa lectura casi ningún linaje de partidos recientes llega a <code>confirmado</code>. El proyecto quiere contar la genealogía como la contaría un historiador: con fuentes, pero interpretándolas, y haciendo visible la interpretación para que no pase por dato bruto («ninguna estimación presentada como dato»). A la vez, la web que se quiere se navega en dos ejes (scroll temporal y zoom con tamaño según peso) y el modelo tiene que permitirlo antes de cargar los linajes que faltan.</p>
+<p>Lo que aquí es técnico (cómo se guarda la justificación, cómo se modelan los varios orígenes, la fórmula del peso, qué cuenta como medio de referencia) lo decide este ADR por delegación de #81 («Abierto a propósito») y es reversible sin volver a Xavier.</p>
+<h2>Decisión</h2>
+<h3>A. Criterio de genealogía</h3>
+<ol>
+<li><strong>La etiqueta de linaje describe lo que pasó políticamente, no el acto formal.</strong> Hay <code>escision_de</code> cuando un grupo relevante de dirigentes o militantes sale de A y funda B o le da forma de manera decisiva, aunque A no se parta formalmente. Lo mismo para <code>fusion_en</code>, <code>absorcion_por</code>, <code>refundacion_en</code> y <code>sucesion_de</code>: se elige la que usaría un historiador del periodo. La relación lleva <strong><code>lectura</code></strong>: <code>literal</code> (o vacío) si la fuente que la confirma la nombra con ese tipo y esas organizaciones; <code>interpretada</code> si el proyecto ha elegido el tipo, la identidad o las organizaciones leyendo las fuentes. Una relación <code>interpretada</code> exige justificación (punto 4).</li>
+<li><strong>Una organización puede tener más de un origen.</strong> Cada procedencia es una relación de linaje propia con la organización nueva como <code>origen</code> (B <code>escision_de</code> A y B <code>sucesion_de</code> C, por ejemplo), cada una con sus fuentes, su estado y su lectura. El grafo de linaje (ADR-0006, punto 5) admite varios padres; nada se calcula suponiendo uno solo.</li>
+<li><strong>La misma organización con otro nombre es una sola ficha.</strong> La ficha lleva <code>nombres</code>, una lista fechada (<code>nombre</code>, <code>siglas</code>, <code>desde</code>/<code>desde_precision</code>, <code>hasta</code>/<code>hasta_precision</code>, <code>nota</code>); <code>nombre</code> y <code>siglas</code> de la ficha son los del último nombre. Vale aunque se inscriba o registre de nuevo (una coalición que se vuelve a registrar en cada elección con el mismo proyecto y socios que cambian es una ficha; cada registro es una fila de <code>candidaturas</code>). Si Wikidata tiene varias entradas para la misma organización, <code>wikidata</code> es la principal y <code>wikidata_otros</code> las demás. <strong><code>renombre_a</code> desaparece</strong> del modelo: un cambio de nombre no es una relación entre dos organizaciones. Cuando el historiador dice que nació otro proyecto (nuevos estatutos, nueva dirección, absorción de otros) aunque siga la inscripción, son dos fichas unidas por <code>refundacion_en</code> con <code>lectura: interpretada</code>. Una ficha con dos o más <code>nombres</code> o con <code>wikidata_otros</code> exige justificación: decir que dos nombres son una organización es una lectura.</li>
+<li><strong>Justificación en los casos discutibles</strong>, guardada como fichero <code>datos/justificaciones/&lt;id&gt;.md</code> con cabecera YAML (<code>id</code>, <code>tabla</code>: <code>relaciones</code> u <code>organizaciones</code>, <code>fila</code>, <code>fuentes</code>: ids de <code>fuentes.csv</code>, al menos uno) y tres apartados obligatorios: «## Qué dicen las fuentes», «## Qué concluye el proyecto» y «## Por qué». La fila justificada apunta a él en su campo <code>justificacion</code>. <strong>Se publica en la web</strong> junto a la relación o la ficha («por qué decimos esto»): <code>construir.py</code> la lleva a <code>datos/justificaciones.json</code>. Es obligatoria cuando la relación es <code>interpretada</code>, cuando una relación de linaje se confirma por prensa convergente (punto 5) o cuando una ficha une varios nombres o varias entradas de Wikidata (punto 3); cualquier tanda puede añadirla a otra fila si hay otra lectura razonable. Plantilla: <code>docs/plantillas/justificacion.md</code>.</li>
+<li><strong>Prensa convergente.</strong> Cuando no haya documento propio ni historiografía (ADR-0020, punto 1), <strong>dos medios de referencia independientes</strong> que coincidan, más una justificación, confirman una relación de linaje. Un solo medio la deja <code>dudoso</code>. Wikidata sigue siendo solo semilla. Medio de referencia: periódico, agencia o radiotelevisión con redacción propia identificable, hemeroteca consultable y estable (URL que resuelve o copia en Wayback), que no es órgano de una organización política, de ámbito estatal o autonómico. Independientes = de grupo editorial distinto. La lista es abierta y vive en <code>datos/medios.csv</code> (<code>id</code>, <code>nombre</code>, <code>grupo</code>, <code>ambito</code>, <code>url</code>, <code>motivo</code>); cada fuente <code>prensa</code> de <code>fuentes.csv</code> dice su <code>medio</code>, y solo las que lo tienen cuentan. Una pieza de agencia reproducida por un periódico cuenta una vez, por la agencia. La lista inicial va en el anexo.</li>
+<li><strong>Casos del linaje Sumar/IU</strong> (fijados por Xavier; la tanda de revisión los carga así, con las fuentes que los sostengan y justificación):</li>
+<li>Más Madrid es <strong>escisión de Podemos</strong> (sector de Errejón, enero de 2019, tras Vistalegre II de 2017) y además procede de la plataforma de Manuela Carmena, venida de Ahora Madrid: dos orígenes (punto 2), el segundo con el tipo que den las fuentes.</li>
+<li>Unidos Podemos y Unidas Podemos son <strong>la misma coalición</strong> con cambio de nombre en 2019: una ficha, <code>unidas_podemos</code>, con <code>nombres</code> fechados.</li>
+<li>Més-Compromís es <strong>el Bloc Nacionalista Valencià refundado</strong> en 2021: <code>refundacion_en</code>, no coalición nueva. La coalición es Compromís. Fecha exacta y continuidad de la inscripción se comprueban en el Registro (ADR-0021, tanda #73): hasta entonces, el estado que den documentos propios o historiografía.</li>
+</ol>
+<h3>B. Lo que la capa de datos permite (la web que se quiere)</h3>
+<ol>
+<li><strong>Dos ejes.</strong> <em>Scroll temporal</em>: para cualquier fecha entre 1977 y hoy, qué organizaciones existían, con qué nombre y de quién se componía cada coalición o federación. <em>Zoom</em>: de lejos, las organizaciones principales con tamaño según su peso; de cerca, cada coalición o federación abierta en sus componentes. El recurso visual (río, metro, burbujas u otro) se decide tras el piloto; aquí se fija que los datos lo permitan.</li>
+<li><strong>Consulta «estado en una fecha»</strong>, implementada en <code>scripts/consultar.py</code> y usada por <code>construir.py</code>, sin código de la web. Una fila con intervalo está <em>vigente</em> en la fecha F si <code>desde ≤ F</code> y (<code>hasta</code> vacío o <code>F ≤ hasta</code>), expandiendo la precisión: <code>anio</code> → del 1 de enero al 31 de diciembre; <code>mes</code> → del día 1 al último; <code>aprox</code> → como la granularidad escrita y marcada <code>aprox</code>. Una fila sin <code>desde</code> ni <code>hasta</code> se devuelve con <code>sin_fecha: true</code>: la web la enseña como «sin fecha conocida», nunca con un intervalo inventado. Toda respuesta lleva la precisión de los límites y el <code>estado</code> de cada fila. Composición de X en F = relaciones <code>miembro_de</code> y <code>coaligada_en</code> hacia X vigentes en F, con su <code>ambito</code>; el nombre de X en F sale de <code>nombres</code>.</li>
+<li><strong>El peso se calcula, no se decide.</strong> Por elección cargada y candidatura: <code>votos</code> = suma de <code>resultados.votos</code> de sus listas; <code>votos_pct</code> = <code>votos</code> / suma de <code>resultados_circunscripcion.validos</code> de todas las circunscripciones de la elección (si falta alguna, <code>votos_pct</code> es nulo: hueco, no estimación); <code>escanos</code> y <code>escanos_pct</code> = <code>escanos</code> / <code>elecciones.escanos_total</code>. El <strong>peso</strong> de una organización en la fecha F es el <code>votos_pct</code> de su candidatura en la última elección cargada de tipo <code>generales</code> con fecha ≤ F (otras elecciones entrarán por <code>tipo</code> cuando se carguen; la web usa generales por defecto). Una organización que concurrió <strong>dentro de una coalición</strong> no tiene peso propio: lleva <code>peso: null</code> y <code>via: &lt;coalición&gt;</code> (con <code>via_ambito</code> si su <code>coaligada_en</code> tiene ámbito); la web la dibuja dentro del nodo de la coalición. No se reparte a ojo ni a partes iguales: sería una estimación presentada como dato (ADR-0003, ADR-0006). <code>construir.py</code> publica <code>datos/pesos.json</code> con estas filas y la fórmula es la de este punto.</li>
+<li><strong>Todo lo que la web necesita para los dos ejes está fechado y con fuente</strong>: nombres, pertenencias, entradas y salidas de coaliciones, relaciones de linaje y peso por fecha. Sin fecha → <code>sin_fecha</code>; con fecha imprecisa → su precisión.</li>
+<li><strong>Se mantiene lo ya previsto</strong>: fichas al tocar un nodo, simulador (ADR-0004), trayectorias de personas, etiquetas atribuidas (ADR-0006), tipología de rupturas e índices.</li>
+</ol>
+<h3>C. Lo hace cumplir el validador</h3>
+<p><code>scripts/validar_datos.py</code> rechaza: (a) <code>lectura: interpretada</code> sin <code>justificacion</code>; (b) una relación de linaje <code>confirmado</code> sin fuente de ADR-0020 punto 1 que no tenga al menos dos fuentes <code>prensa</code> con <code>medio</code> de <code>grupo</code> distinto <strong>y</strong> <code>justificacion</code>; (c) una ficha con dos o más <code>nombres</code> o con <code>wikidata_otros</code> sin <code>justificacion</code>; (d) una <code>justificacion</code> que no apunte a un fichero existente cuyo <code>tabla</code>/<code>fila</code> coincidan con la fila, con al menos una fuente existente y los tres apartados; (e) <code>renombre_a</code> como tipo; (f) <code>medio</code> en una fuente que no sea <code>prensa</code>, o un <code>medio</code> que no esté en <code>medios.csv</code>; (g) una entrada de <code>nombres</code> sin <code>nombre</code> o con fechas incoherentes con su precisión, o una ficha cuyo <code>nombre</code> no figure en su lista <code>nombres</code>. <code>construir.py</code> sigue dejando fuera de la web las relaciones de linaje de solo Wikidata (ADR-0020) y publica <code>justificaciones.json</code> y <code>pesos.json</code>.</p>
+<h2>Enmienda a ADR-0002</h2>
+<ul>
+<li>Tabla de entidades, fila <code>organizacion</code>: la ficha lleva además <code>nombres</code> (lista fechada), <code>wikidata_otros</code> y <code>justificacion</code>. Fila <code>relacion</code>: los tipos son <code>miembro_de</code>, <code>coaligada_en</code>, <code>escision_de</code>, <code>fusion_en</code>, <code>absorcion_por</code>, <code>refundacion_en</code> y <code>sucesion_de</code>; se añaden <code>lectura</code> y <code>justificacion</code>. Nueva entidad <code>justificacion</code> (<code>datos/justificaciones/&lt;id&gt;.md</code>) y nueva tabla <code>medios</code> (<code>datos/medios.csv</code>).</li>
+<li>Principio 7, última frase («si una organización cambia de nombre, la relación <code>renombre_a</code> lo registra») queda: «si una organización cambia de nombre, la lista <code>nombres</code> de su ficha lo registra con fechas; el <code>id</code> no cambia».</li>
+<li>Principio 5: la tipología de rupturas es escisión, fusión, absorción, refundación y sucesión; el cambio de nombre no es ruptura.</li>
+</ul>
+<h2>Enmienda a ADR-0020</h2>
+<ul>
+<li>La lista de relaciones de linaje pierde <code>renombre_a</code>.</li>
+<li>Punto 3 («Prensa: permite cargar la relación como <code>dudoso</code>…») queda: «Prensa: un solo medio permite cargar la relación como <code>dudoso</code> y publicarla marcada así; dos medios de referencia independientes (ADR-0022, punto 5) que coincidan, con justificación publicada, la confirman cuando no hay fuente del punto 1».</li>
+<li>Punto 5: el validador aplica además las reglas de ADR-0022, apartado C.</li>
+</ul>
+<h2>Amplía ADR-0006</h2>
+<ul>
+<li>Punto 5: el grafo de linaje admite varios orígenes por organización y se calcula sobre relaciones cuyo tipo describe lo que pasó políticamente (ADR-0022, punto 1), con la lectura y la justificación visibles.</li>
+<li>Nuevo punto 8: el tamaño de un nodo en la web sale solo del peso calculado del punto 9 de ADR-0022; nunca de una apreciación.</li>
+</ul>
+<h2>Consecuencias</h2>
+<ul>
+<li>Tandas: modelo (esquemas, validador, <code>construir</code>, plantilla y <code>medios.csv</code>); consulta en el tiempo y peso (<code>consultar.py</code>, <code>pesos.json</code>); revisión de Sumar/IU con los casos del punto 6; composición de IU en 1986, 1989, 2016 y 2023 con las consultas anotadas; carga del 23J para Sumar y peso en esa fecha. Las tandas #74-#77 citan este ADR y cargan ya con <code>lectura</code>, <code>nombres</code> y justificaciones.</li>
+<li>La PR que fusiona dos fichas quita la sobrante con <code>git rm</code> dentro del worktree (queda en el historial; es el único borrado que admite el flujo, FLUJO §6) y reapunta sus relaciones sin cambiar sus ids.</li>
+<li>Habrá más relaciones <code>confirmado</code> y cada una <code>interpretada</code> llevará su «por qué» publicado; lo que las fuentes no den sigue siendo <code>dudoso</code> o hueco.</li>
+</ul>
+<h2>Anexo · lista inicial de medios de referencia (<code>datos/medios.csv</code>)</h2>
+<p>Abierta: una tanda añade una fila con su <code>motivo</code> si cumple el criterio del punto 5; el verificador lo comprueba. <code>grupo</code> es el grupo editorial o propietario, que decide la independencia.</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>nombre</th>
+<th>grupo</th>
+<th>ambito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>elpais</td>
+<td>El País</td>
+<td>Prisa</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>elmundo</td>
+<td>El Mundo</td>
+<td>Unidad Editorial</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>abc</td>
+<td>ABC</td>
+<td>Vocento</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>lavanguardia</td>
+<td>La Vanguardia</td>
+<td>Godó</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>elperiodico</td>
+<td>El Periódico de Catalunya</td>
+<td>Prensa Ibérica</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>eldiario</td>
+<td>elDiario.es</td>
+<td>Diario de Prensa Digital</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>elconfidencial</td>
+<td>El Confidencial</td>
+<td>Titania</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>elespanol</td>
+<td>El Español</td>
+<td>El León de El Español Publicaciones</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>publico</td>
+<td>Público</td>
+<td>Display Connectors</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>infolibre</td>
+<td>infoLibre</td>
+<td>Ediciones Prensa Libre</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>20minutos</td>
+<td>20minutos</td>
+<td>Henneo</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>efe</td>
+<td>Agencia EFE</td>
+<td>Agencia EFE</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>europapress</td>
+<td>Europa Press</td>
+<td>Europa Press</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>rtve</td>
+<td>RTVE</td>
+<td>Corporación RTVE</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>elsalto</td>
+<td>El Salto</td>
+<td>El Salto (cooperativa)</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>lamarea</td>
+<td>La Marea</td>
+<td>MásPúblico (cooperativa)</td>
+<td>estatal</td>
+</tr>
+<tr>
+<td>heraldo</td>
+<td>Heraldo de Aragón</td>
+<td>Henneo</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>elcorreo</td>
+<td>El Correo</td>
+<td>Vocento</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>diariovasco</td>
+<td>El Diario Vasco</td>
+<td>Vocento</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>lavozdegalicia</td>
+<td>La Voz de Galicia</td>
+<td>Corporación Voz de Galicia</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>levante</td>
+<td>Levante-EMV</td>
+<td>Prensa Ibérica</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>lasprovincias</td>
+<td>Las Provincias</td>
+<td>Vocento</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>lanuevaespana</td>
+<td>La Nueva España</td>
+<td>Prensa Ibérica</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>ara</td>
+<td>Ara</td>
+<td>Edició de Premsa Periòdica Ara</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>vilaweb</td>
+<td>VilaWeb</td>
+<td>Partal, Maresma &amp; Associats</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>naciodigital</td>
+<td>Nació Digital</td>
+<td>Nació Digital</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>berria</td>
+<td>Berria</td>
+<td>Euskal Editorea</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>diariodenavarra</td>
+<td>Diario de Navarra</td>
+<td>La Información</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>canarias7</td>
+<td>Canarias7</td>
+<td>Vocento</td>
+<td>autonomico</td>
+</tr>
+<tr>
+<td>diariodemallorca</td>
+<td>Diario de Mallorca</td>
+<td>Prensa Ibérica</td>
+<td>autonomico</td>
+</tr>
+</tbody>
+</table>
 </main>
 <footer>Datos: CC BY 4.0 · Código: MIT · <a href="https://github.com/xavierguinotcanelles/partidos">Fuente y correcciones</a></footer>
 </body>
