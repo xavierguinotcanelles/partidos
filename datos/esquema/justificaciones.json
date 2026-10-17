@@ -1,0 +1,34 @@
+{
+  "entidad": "justificaciones",
+  "fichero": "datos/justificaciones/<id>.md",
+  "descripcion": "Justificación publicada de una lectura discutible (ADR-0022, punto 4). El id es el nombre del fichero; cabecera YAML y tres apartados.",
+  "requiere_fuente": false,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true,
+      "patron": "^[a-z0-9_]+$"
+    },
+    {
+      "nombre": "tabla",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "relaciones",
+        "organizaciones"
+      ]
+    },
+    {
+      "nombre": "fila",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "fuentes",
+      "tipo": "lista",
+      "referencia": "fuentes",
+      "obligatorio": true
+    }
+  ]
+}

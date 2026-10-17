@@ -1,0 +1,50 @@
+{
+  "tabla": "medios",
+  "fichero": "datos/medios.csv",
+  "descripcion": "Medios de referencia para la prensa convergente (ADR-0022, punto 5). Lista abierta.",
+  "clave": [
+    "id"
+  ],
+  "requiere_fuente": false,
+  "campos": [
+    {
+      "nombre": "id",
+      "tipo": "texto",
+      "obligatorio": true,
+      "patron": "^[a-z0-9_]+$"
+    },
+    {
+      "nombre": "nombre",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "grupo",
+      "tipo": "texto",
+      "obligatorio": true,
+      "descripcion": "Grupo editorial o propietario; decide la independencia"
+    },
+    {
+      "nombre": "ambito",
+      "tipo": "texto",
+      "obligatorio": true,
+      "valores": [
+        "estatal",
+        "autonomico"
+      ]
+    },
+    {
+      "nombre": "url",
+      "tipo": "texto"
+    },
+    {
+      "nombre": "motivo",
+      "tipo": "texto",
+      "obligatorio": true
+    },
+    {
+      "nombre": "nota",
+      "tipo": "texto"
+    }
+  ]
+}

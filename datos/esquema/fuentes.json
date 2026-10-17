@@ -69,6 +69,12 @@
       "descripcion": "URL de la copia archivada (Wayback)"
     },
     {
+      "nombre": "medio",
+      "tipo": "texto",
+      "referencia": "medios",
+      "descripcion": "Id de datos/medios.csv; solo en fuentes de tipo prensa (ADR-0022)"
+    },
+    {
       "nombre": "licencia",
       "tipo": "texto"
     },

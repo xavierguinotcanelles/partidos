@@ -35,7 +35,6 @@
         "fusion_en",
         "absorcion_por",
         "refundacion_en",
-        "renombre_a",
         "sucesion_de"
       ]
     },
@@ -82,6 +81,20 @@
         "dudoso",
         "en_disputa"
       ]
+    },
+    {
+      "nombre": "lectura",
+      "tipo": "texto",
+      "valores": [
+        "literal",
+        "interpretada"
+      ],
+      "descripcion": "literal (o vacío) si la fuente nombra el tipo y las organizaciones; interpretada si el proyecto lo ha leído (ADR-0022)"
+    },
+    {
+      "nombre": "justificacion",
+      "tipo": "texto",
+      "referencia": "justificaciones"
     },
     {
       "nombre": "nota",

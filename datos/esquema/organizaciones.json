@@ -88,6 +88,60 @@
       "patron": "^(Q\\d+)?$"
     },
     {
+      "nombre": "wikidata_otros",
+      "tipo": "lista",
+      "patron_elemento": "^Q\\d+$",
+      "descripcion": "Otras entradas de Wikidata de la misma organización (ADR-0022); la principal va en 'wikidata'"
+    },
+    {
+      "nombre": "nombres",
+      "tipo": "lista_objetos",
+      "descripcion": "Nombres fechados de la organización (ADR-0022); 'nombre' y 'siglas' de la ficha son los del último",
+      "campos": [
+        {
+          "nombre": "nombre",
+          "tipo": "texto",
+          "obligatorio": true
+        },
+        {
+          "nombre": "siglas",
+          "tipo": "texto"
+        },
+        {
+          "nombre": "desde",
+          "tipo": "fecha"
+        },
+        {
+          "nombre": "desde_precision",
+          "tipo": "texto",
+          "valores": [
+            "exacta",
+            "mes",
+            "anio",
+            "aprox"
+          ]
+        },
+        {
+          "nombre": "hasta",
+          "tipo": "fecha"
+        },
+        {
+          "nombre": "hasta_precision",
+          "tipo": "texto",
+          "valores": [
+            "exacta",
+            "mes",
+            "anio",
+            "aprox"
+          ]
+        },
+        {
+          "nombre": "nota",
+          "tipo": "texto"
+        }
+      ]
+    },
+    {
       "nombre": "estado",
       "tipo": "texto",
       "obligatorio": true,
@@ -96,6 +150,12 @@
         "dudoso",
         "en_disputa"
       ]
+    },
+    {
+      "nombre": "justificacion",
+      "tipo": "texto",
+      "referencia": "justificaciones",
+      "descripcion": "Id de datos/justificaciones/<id>.md (ADR-0022)"
     },
     {
       "nombre": "fuentes",
