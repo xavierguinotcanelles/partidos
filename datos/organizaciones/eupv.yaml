@@ -1,0 +1,12 @@
+id: eupv
+nombre: "Esquerra Unida del País Valencià"
+siglas: "EUPV"
+tipo: partido
+ambito: autonomico
+alta: "1986"
+alta_precision: anio
+wikidata: Q3394396
+estado: dudoso
+fuentes:
+  - wikidata-q3394396-eupv
+notas: "Parte de IU (P361) según Wikidata. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados."

@@ -1,0 +1,11 @@
+id: unidas_podemos
+nombre: "Unidas Podemos"
+tipo: coalicion
+ambito: estatal
+alta: "2019-03-15"
+alta_precision: exacta
+wikidata: Q62426028
+estado: dudoso
+fuentes:
+  - wikidata-q62426028-unidaspodemos
+notas: "Coalición electoral desde 2019; sigue (P155) a Unidos Podemos. Sin fecha de fin en Wikidata. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados."

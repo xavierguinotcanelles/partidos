@@ -1,0 +1,15 @@
+id: bloc_nacionalista_valencia
+nombre: "Bloc Nacionalista Valencià"
+siglas: "BLOC"
+tipo: partido
+ambito: autonomico
+alta: "1998-12-12"
+alta_precision: exacta
+baja: "2021-06"
+baja_precision: mes
+wikidata: Q2533148
+estado: dudoso
+fuentes:
+  - wikidata-q2533148-bloc
+  - org-compromis-normes
+notas: "Partido fundador de Coalició Compromís según sus Normes de funcionament. Wikidata lo da reemplazado (P1366) por Més-Compromís en junio de 2021; la baja es esa fecha de Wikidata. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados."
