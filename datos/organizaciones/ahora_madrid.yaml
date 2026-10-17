@@ -1,0 +1,14 @@
+id: ahora_madrid
+nombre: "Ahora Madrid"
+tipo: partido
+ambito: local
+alta: "2015-03"
+alta_precision: mes
+baja: "2019"
+baja_precision: anio
+wikidata: Q19587806
+estado: dudoso
+fuentes:
+  - wikidata-q19587806-ahoramadrid
+  - prensa-eldiario-2019-02-08-mas-madrid-partido
+notas: "Partido «instrumental» con el que concurrió la candidatura de Carmena al Ayuntamiento de Madrid en 2015 (elDiario.es, 08-02-2019). Alta, baja y tipo: semilla Wikidata (P31 partido político, P571 2015-03, P576 2019), sin contrastar. Registro `dudoso`: pendiente del Registro (#73)."

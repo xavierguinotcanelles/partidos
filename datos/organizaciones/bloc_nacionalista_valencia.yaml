@@ -5,11 +5,11 @@ tipo: partido
 ambito: autonomico
 alta: "1998-12-12"
 alta_precision: exacta
-baja: "2021-06"
-baja_precision: mes
+baja: "2021-06-26"
+baja_precision: exacta
 wikidata: Q2533148
 estado: dudoso
 fuentes:
   - wikidata-q2533148-bloc
   - org-compromis-normes
-notas: "Partido fundador de Coalició Compromís según sus Normes de funcionament. Wikidata lo da reemplazado (P1366) por Més-Compromís en junio de 2021; la baja es esa fecha de Wikidata. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. No localizado en la descarga del Registro (2026-10-17) por denominación; las siglas BLOC coinciden con «BLOC NACIONALISTA CATALÁ» (Castell-Platja d'Aro, 09/01/2023), que es otra formación. Existe «MÉS-COMPROMÍS» (València, inscrita el 19/05/1998), compatible con ser la inscripción del Bloc con la denominación cambiada, pero la descarga no trae histórico de denominaciones y no se puede afirmar; la fecha de alta de Wikidata (1998-12-12) no coincide con ella."
+notas: "Partido fundador de Coalició Compromís según sus Normes de funcionament. Se refunda en Més-Compromís en su VIII Congreso: baja el 26-06-2021, día desde el que el partido «es diu Més-Compromís» (VilaWeb; elDiario.es, misma fecha); Wikidata da junio de 2021 (P1366). Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. No localizado en la descarga del Registro (2026-10-17) por denominación; las siglas BLOC coinciden con «BLOC NACIONALISTA CATALÁ» (Castell-Platja d'Aro, 09/01/2023), que es otra formación. Existe «MÉS-COMPROMÍS» (València, inscrita el 19/05/1998), compatible con ser la inscripción del Bloc con la denominación cambiada, pero la descarga no trae histórico de denominaciones y no se puede afirmar; la fecha de alta de Wikidata (1998-12-12) no coincide con ella."

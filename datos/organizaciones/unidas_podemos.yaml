@@ -1,11 +1,31 @@
 id: unidas_podemos
 nombre: "Unidas Podemos"
+siglas: "PODEMOS-IU-EQUO"
 tipo: coalicion
 ambito: estatal
-alta: "2019-03-15"
+alta: "2016-05-13"
 alta_precision: exacta
 wikidata: Q62426028
-estado: dudoso
+wikidata_otros:
+  - Q24039754
+nombres:
+  - nombre: "Unidos Podemos"
+    siglas: "PODEMOS-IU-EQUO-CLIAS"
+    desde: "2016-05-13"
+    desde_precision: exacta
+    hasta: "2019-03-14"
+    hasta_precision: exacta
+    nota: "Pacto de coalición ante la JEC (código 1611), sello 13/05/2016; generales del 26-06-2016. Fin: día anterior al sello del pacto de 2019 (deducido; ninguna fuente fecha el cambio de nombre)."
+  - nombre: "Unidas Podemos"
+    siglas: "PODEMOS-IU-EQUO"
+    desde: "2019-03-15"
+    desde_precision: exacta
+    nota: "Pacto de coalición ante la JEC (código 2760), sello 15/03/2019; generales del 28-04-2019."
+estado: confirmado
+justificacion: unidas_podemos_identidad
 fuentes:
+  - jec-pacto-coalicion-unidos-podemos-2016
+  - jec-pacto-coalicion-unidas-podemos-2019
   - wikidata-q62426028-unidaspodemos
-notas: "Coalición electoral desde 2019; sigue (P155) a Unidos Podemos. Sin fecha de fin en Wikidata. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. No localizado en la descarga del Registro (2026-10-17): ninguna denominación ni siglas coincide; es coalición electoral y el Registro no inscribe coaliciones."
+  - wikidata-q24039754-unidospodemos
+notas: "Una ficha para Unidos Podemos (2016) y Unidas Podemos (2019) (ADR-0022): la coalición estatal de Podemos, IU y Equo cambia de nombre; ver la justificación. Alta y nombres de los dos pactos de coalición ante la JEC; cada pacto vale para una convocatoria y no da fecha de fin: baja sin fijar. Siglas de la ficha: las del pacto de 2019. Registro (descarga 2026-10-17): hay un «UNIDOS PODEMOS» inscrito el 29/09/2016, pero la coalición no es esa inscripción y el Registro no inscribe coaliciones; queda para #73."
