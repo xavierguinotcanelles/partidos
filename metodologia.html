@@ -169,6 +169,38 @@
 <li>Una etiqueta sin <code>atribucion</code> y <code>atribuida_por</code> no pasa la validación de datos.</li>
 <li>La discusión sobre «a qué espacio pertenece X» queda fuera del proyecto por diseño; lo que el proyecto ofrece es el grafo y las atribuciones para que cada cual juzgue.</li>
 </ul>
+<!-- ADR-0020-fuentes-del-linaje.md -->
+<h2>ADR-0020 · Fuentes que confirman una relación de linaje</h2>
+<h2>Contexto</h2>
+<p>Decisión de Xavier (#67, <code>confirmo</code> del 17-10-2026; criterio editorial, su lista cerrada). La cata de fuentes del piloto (F1.1, <code>docs/FUENTES.md</code>) muestra que las escisiones, fusiones, refundaciones y sucesiones entre organizaciones <strong>no son actos registrales</strong>: ni el BOE ni el Registro de Partidos las documentan como tales, y el Registro no responde a clientes automáticos. Con la regla de ADR-0003 (solo primaria oficial para confirmar) el piloto no podría confirmar casi ninguna relación de linaje; aceptar Wikidata como fuente suficiente rompería ADR-0003. Los documentos de la propia organización y la historiografía citada son comprobables por cualquiera y ya figuran en ADR-0003 y ADR-0006 como fuentes admitidas para otros hechos.</p>
+<h2>Decisión</h2>
+<p>Se aplica a las relaciones de <strong>linaje</strong>: <code>escision_de</code>, <code>fusion_en</code>, <code>absorcion_por</code>, <code>refundacion_en</code>, <code>renombre_a</code> y <code>sucesion_de</code> (ADR-0002). <code>miembro_de</code> y <code>coaligada_en</code> siguen con ADR-0003 (pactos de coalición de la JEC, BOE, estatutos).</p>
+<ol>
+<li><strong>Qué confirma.</strong> Una relación de linaje solo está <code>confirmado</code> con al menos una fuente de estas clases, enlazada por <code>fuente_de</code>:</li>
+<li><strong>BOE o Registro de Partidos</strong> (<code>tipo: boe</code> o <code>registro_partidos</code>): inscripción, modificación o extinción.</li>
+<li><strong>Documento de la propia organización</strong> (<code>tipo: organizacion</code>): estatutos, acta o resolución de congreso, comunicado oficial. El título de la fuente dice qué documento es y de qué fecha; se copia en <code>fuentes/organizaciones/</code>.</li>
+<li><strong>Historiografía citada</strong> (<code>tipo: academica</code>): obra con autor, título, año y página. La cita completa va en <code>fuente_de.cita</code>; sin cita, la fuente no cuenta.</li>
+<li><strong>Wikidata es semilla y nunca basta sola.</strong> Una relación de linaje cuya única fuente sea Wikidata se carga como <code>dudoso</code> y <strong>no se publica</strong> (ADR-0003, punto 1). Sirve para saber qué buscar, no para afirmar.</li>
+<li><strong>Prensa</strong>: permite cargar la relación como <code>dudoso</code> y publicarla marcada así, con URL, copia archivada y cita breve (ADR-0003, punto 3).</li>
+<li><strong>Contradicción</strong>: si dos fuentes de las clases del punto 1 se contradicen (fecha, tipo de relación, organizaciones), la relación queda <code>en_disputa</code> con las dos citadas en <code>fuente_de</code>. El proyecto no elige (ADR-0003, punto 4): una relación <code>en_disputa</code> lleva al menos dos fuentes.</li>
+<li><strong>Lo hace cumplir el validador</strong>, no el criterio de quien carga: <code>scripts/validar_datos.py</code> rechaza una relación de linaje <code>confirmado</code> sin fuente de las clases del punto 1, una fuente <code>academica</code> enlazada sin <code>cita</code>, y una relación <code>en_disputa</code> con menos de dos fuentes; <code>scripts/construir.py</code> deja fuera de la web las relaciones de linaje cuyas fuentes sean solo Wikidata.</li>
+<li><strong>Qué obras se citan</strong> lo decide cada tanda según el linaje, con la cita completa; no hay lista cerrada de historiografía.</li>
+</ol>
+<h2>Enmienda a ADR-0003</h2>
+<ul>
+<li>Punto 1 («Primero las fuentes primarias oficiales; las secundarias solo como semilla o contexto, y siempre verificadas contra una primaria antes de publicar»): para las relaciones de linaje, «verificadas contra una primaria» queda como «confirmadas con una fuente del punto 1 de ADR-0020»; los documentos de la propia organización y la historiografía citada confirman una relación de linaje sin que haga falta BOE ni Registro.</li>
+<li>Tabla de fuentes: la fila «Documentos de la propia organización» añade «relaciones de linaje (ADR-0020)» a su «Para qué»; se añade la fila «Historiografía citada (autor, obra, año y página) | Relaciones de linaje y contexto | Confirma una relación de linaje si la cita es completa (ADR-0020)»; la fila «Wikidata» queda «Secundaria; una relación de linaje que solo esté en Wikidata es <code>dudoso</code> y no se publica».</li>
+</ul>
+<h2>Amplía ADR-0006</h2>
+<ul>
+<li>Punto 5 (linaje estructural): el grafo de linaje se calcula sobre las relaciones <code>confirmado</code> y <code>dudoso</code> cargadas con este criterio; las de solo Wikidata no entran en el grafo publicado.</li>
+</ul>
+<h2>Consecuencias</h2>
+<ul>
+<li>Habrá menos relaciones <code>confirmado</code> y más <code>dudoso</code> al principio; la web las enseña como tales (ADR-0002, principio 3).</li>
+<li><code>fuentes/README.md</code> gana la carpeta <code>organizaciones/</code> (documentos propios); <code>datos/fuentes.csv</code> usa <code>tipo: organizacion</code> y <code>tipo: academica</code> con <code>caracter</code> según ADR-0003.</li>
+<li>Primera tanda de F1.2: el validador (regla y tests); después los linajes (PLAN F1.2).</li>
+</ul>
 </main>
 <footer>Datos: CC BY 4.0 · Código: MIT · <a href="https://github.com/xavierguinotcanelles/partidos">Fuente y correcciones</a></footer>
 </body>
