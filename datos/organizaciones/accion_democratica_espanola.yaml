@@ -1,0 +1,14 @@
+id: accion_democratica_espanola
+nombre: "Acción Democrática Española"
+tipo: partido
+ambito: estatal
+alta: "1977"
+alta_precision: anio
+baja: "1979"
+baja_precision: anio
+wikidata: Q3395257
+estado: dudoso
+fuentes:
+  - wikidata-q3395257-ade
+  - acad-montero-1987-reis-ap
+notas: "Partido de la federación fundacional de Alianza Popular (1976). Montero (1987, REIS 39, pág. 10, nota 1) habla de «siete «partidos» federados» y nombra a sus dirigentes (Fraga, Fernández de la Mora, López Rodó, De la Fuente, Silva Muñoz, Martínez Esteruelas y Thomas de Carranza), no a los partidos; el nombre de este partido como fundador de AP sale solo de Wikidata (P1365 de AP). Wikidata da alta en 1977, posterior a la fundación de AP (9-10-1976): sin contrastar. Tipo partido: Wikidata, sin contrastar. Ficha pendiente del Registro (ADR-0021): alta, baja, tipo y ámbito salen de la semilla Wikidata y no están contrastados; la descarga del Registro (2026-10-17) no trae ninguna formación con este nombre."

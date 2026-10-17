@@ -1,0 +1,14 @@
+id: union_del_pueblo_espanol
+nombre: "Unión del Pueblo Español"
+tipo: partido
+ambito: estatal
+alta: "1976-09-17"
+alta_precision: exacta
+baja: "1977-05-04"
+baja_precision: exacta
+wikidata: Q3397692
+estado: dudoso
+fuentes:
+  - wikidata-q3397692-udpe
+  - acad-montero-1987-reis-ap
+notas: "Partido de la federación fundacional de Alianza Popular (1976). Montero (1987, REIS 39, pág. 10, nota 1) habla de «siete «partidos» federados» y nombra a sus dirigentes (Fraga, Fernández de la Mora, López Rodó, De la Fuente, Silva Muñoz, Martínez Esteruelas y Thomas de Carranza), no a los partidos; el nombre de este partido como fundador de AP sale solo de Wikidata (P1365 de AP). Wikidata: asociación política desde el 28-07-1975 y partido del 17-09-1976 al 04-05-1977; `alta` es la del paso a partido. Tipo partido: Wikidata, sin contrastar. Ficha pendiente del Registro (ADR-0021): alta, baja, tipo y ámbito salen de la semilla Wikidata y no están contrastados; la descarga del Registro (2026-10-17) no trae ninguna formación con este nombre."

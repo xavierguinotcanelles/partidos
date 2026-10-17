@@ -1,0 +1,36 @@
+id: coalicion_popular
+nombre: "Coalición Popular"
+siglas: "AP-PDP-PL"
+tipo: coalicion
+ambito: estatal
+alta: "1982"
+alta_precision: anio
+baja: "1989"
+baja_precision: anio
+color: "#00A0DF"
+wikidata: Q3393021
+wikidata_otros:
+  - Q47014901
+nombres:
+  - nombre: "Alianza Popular - Partido Demócrata Popular"
+    siglas: "AP-PDP"
+    desde: "1982"
+    desde_precision: anio
+    hasta: "1986-06-21"
+    hasta_precision: aprox
+    nota: "Interior 1982, fichero 03, código 000005 `AP-PDP` «ALIANZA POPULAR - PARTIDO DEMOCRATA POPULAR», con 000006, 000007, 000008 y 000086 acumuladas a 000005. Fin: ninguna fuente fecha el cambio de nombre; Montero (pág. 20) lo cuenta, sin fecha, entre 1982 y las generales de 1986. `hasta` es el día anterior a las generales del 22-06-1986, en las que ya concurre como Coalición Popular: cota (deducida), por eso `aprox`."
+  - nombre: "Coalición Popular"
+    siglas: "AP-PDP-PL"
+    desde: "1986-06-22"
+    desde_precision: aprox
+    nota: "Fecha: generales del 22-06-1986, primera candidatura con este nombre; el cambio pudo ser antes (cota, `aprox`). Interior 1986, fichero 03, código 000009 `AP-PDP-PL` «COALICION POPULAR» (con 000010 `AP-PDP-PL-C` y 000011 `AP-PL-UPN`, acumuladas a 000009). Montero (1987, pág. 20): «pasó a denominarse Coalición Popular»."
+estado: dudoso
+justificacion: coalicion_popular_identidad
+fuentes:
+  - interior-02198210-tota
+  - interior-02198606-tota
+  - acad-montero-1987-reis-ap
+  - acad-magaldi-2022-hernandez-mancha
+  - wikidata-q3393021-coalicionpopular
+  - wikidata-q47014901-ap-pdp-ul
+notas: "Una ficha para la coalición AP-PDP de 1982 y Coalición Popular de 1986 (ADR-0022, punto 3): Montero (1987, REIS 39, pág. 20) dice que «la coalición conservadora conoció sólo pequeños cambios: pasó a denominarse Coalición Popular […] por la presencia de un nuevo «partido», el Partido Liberal»; ver la justificación. Siglas de la ficha: las de 1986. Alta: generales del 28-10-1982 (Interior). Baja 1989: solo Wikidata (P576), sin contrastar; Montero (pág. 23) escribe en abril de 1987 que «el PDP y el PL […] rompieron el pacto de la Coalición», y en las generales de 1989 AP ya concurre como PP (Interior 1989, código 000002). Wikidata tiene dos entradas: Q3393021 (Coalición Popular, 1986-1989) y Q47014901 (coalición AP-PDP-UL, 1983); la de 1983 lleva los mismos socios principales (AP y PDP) y se lleva a wikidata_otros; ninguna fuente copiada dice en qué elecciones concurrió. En 1982 y 1986 concurrió en algunas provincias con partidos regionales (PAR, UV, UPN, PDL con UCD en 1982; UPN en 1986), que esta tanda no carga. Color: P465 de Wikidata (Q3393021)."

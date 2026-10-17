@@ -1,0 +1,16 @@
+id: partido_liberal
+nombre: "Partido Liberal"
+siglas: "PL"
+tipo: partido
+ambito: estatal
+alta: "1976-06"
+alta_precision: mes
+baja: "1989"
+baja_precision: anio
+wikidata: Q3322686
+estado: dudoso
+fuentes:
+  - wikidata-q3322686-partidoliberal
+  - acad-montero-1987-reis-ap
+  - acad-magaldi-2022-hernandez-mancha
+notas: "Montero (1987, REIS 39, pág. 20): la coalición conservadora «pasó a denominarse Coalición Popular […] por la presencia de un nuevo «partido», el Partido Liberal (PL), un grupo en realidad inexistente e impulsado desde la propia AP». Alta (junio de 1976) y baja (1989): Wikidata (P571/P576), sin contrastar; el alta de Wikidata choca con el «nuevo partido» de Montero y queda dudosa. Magaldi (2022, Revista Historia Autónoma 21, pág. 121) nombra a «los liberales de Segurado» en 1988 y (pág. 122) dice que en el PP de 1989 los socios de otras formaciones entraron «a título individual»; Wikidata lo pone como «anterior» del PP sin tipo: no se carga relación de linaje PL → PP. Sin relación cargada con Unión Liberal (1983) ni con el Partido Demócrata Liberal de 1982: ninguna fuente copiada las une. Registro (descarga 2026-10-17): no hay ningún «PARTIDO LIBERAL» sin calificativo; alta y baja siguen pendientes del Registro (ADR-0021)."

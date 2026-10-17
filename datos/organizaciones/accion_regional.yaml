@@ -1,0 +1,14 @@
+id: accion_regional
+nombre: "Acción Regional"
+tipo: partido
+ambito: estatal
+alta: "1976"
+alta_precision: anio
+baja: "1977"
+baja_precision: anio
+wikidata: Q980471
+estado: dudoso
+fuentes:
+  - wikidata-q980471-accionregional
+  - acad-montero-1987-reis-ap
+notas: "Partido de la federación fundacional de Alianza Popular (1976). Montero (1987, REIS 39, pág. 10, nota 1) habla de «siete «partidos» federados» y nombra a sus dirigentes (Fraga, Fernández de la Mora, López Rodó, De la Fuente, Silva Muñoz, Martínez Esteruelas y Thomas de Carranza), no a los partidos; el nombre de este partido como fundador de AP sale solo de Wikidata (P1365 de AP). Wikidata la describe como asociación política. Tipo partido: Wikidata, sin contrastar. Ficha pendiente del Registro (ADR-0021): alta, baja, tipo y ámbito salen de la semilla Wikidata y no están contrastados; la descarga del Registro (2026-10-17) no trae ninguna formación con este nombre."

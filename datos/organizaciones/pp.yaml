@@ -1,0 +1,18 @@
+id: pp
+nombre: "Partido Popular"
+siglas: "PP"
+tipo: partido
+ambito: estatal
+alta: "1989-01-20"
+alta_precision: exacta
+color: "#1D84CE"
+wikidata: Q185088
+estado: dudoso
+fuentes:
+  - wikidata-q185088-pp
+  - acad-magaldi-2022-hernandez-mancha
+  - acad-lopez-nieto-2009-20-anos-pp
+  - org-pp-estatutos-2017
+  - interior-02198910-tota
+  - registro-descarga-2026-10-17
+notas: "Nace en el IX Congreso de Alianza Popular (20-22 de enero de 1989), que Magaldi (2022, Revista Historia Autónoma 21, pág. 122) y López Nieto (2009, Cuadernos de Pensamiento Político, pág. 175) llaman de la «refundación»; ver la relación ap → pp y su justificación. Alta 20-01-1989: Wikidata (P571), primer día del congreso según Magaldi. Registro de Partidos (descarga 2026-10-17): «PARTIDO POPULAR (PP)», C/ Genova, 13, Madrid, inscrita el 04/05/1977; la inscripción es anterior al PP de 1989 y la descarga no trae el histórico de denominaciones, así que no se sabe de qué formación de 1977 es la inscripción que hoy lleva su nombre: `alta` sigue siendo la de 1989 y queda `dudoso`. Los estatutos de 2017 (art. 45, pág. 98 del PDF) reconocen a Manuel Fraga como «Presidente Fundador del Partido Popular» y no nombran a AP. Candidatura de 1989: Interior 1989, fichero 03, código 000002 `PP` «PARTIDO POPULAR» (con 000078 `UPN-PP` «UNION DEL PUEBLO NAVARRO CON PARTIDO POPULAR» y 000098 `PP-C DE G` «PARTIDO POPULAR CENTRISTAS DE GALICIA», acumuladas a 000002). Color: P465 de Wikidata. Tipo: Wikidata y estatutos («partido político», art. 1), sin contrastar con la inscripción."

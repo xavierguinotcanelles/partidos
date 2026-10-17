@@ -1,0 +1,20 @@
+id: ap
+nombre: "Alianza Popular"
+siglas: "AP"
+tipo: federacion
+ambito: estatal
+alta: "1976-10-09"
+alta_precision: exacta
+baja: "1989-01-20"
+baja_precision: exacta
+color: "#FFD700"
+wikidata: Q2838243
+estado: dudoso
+fuentes:
+  - wikidata-q2838243-ap
+  - acad-montero-1987-reis-ap
+  - acad-magaldi-2022-hernandez-mancha
+  - interior-02197706-tota
+  - interior-02198210-tota
+  - registro-descarga-2026-10-17
+notas: "Alta 9-10-1976 y baja 20-01-1989: Wikidata (P571/P576), sin contrastar; Montero (1987, REIS 39, pág. 10) la da «fundada a finales de 1976 como federación» de siete «partidos», y Magaldi (2022, Revista Historia Autónoma 21, pág. 122) sitúa su IX Congreso entre el 20 y el 22 de enero de 1989, cuando «pasó a denominarse Partido Popular». Tipo federación: Registro de Partidos (descarga 2026-10-17: «FEDERACION DE ALIANZA POPULAR (A.P.)», C/ Genova, 13, Madrid, inscrita el 22/03/1977), Wikidata (P31) y la candidatura de 1977 en Interior (fichero 03, código 000009, siglas `AP`, «FEDERACION DE PARTIDOS DE ALIANZA POPULAR»); Montero la llama «partido» desde 1977, pero ninguna fuente copiada fecha un paso de federación a partido: se deja federación, el tipo de la inscripción. Candidaturas con que concurrió: 1977, `AP` «FEDERACION DE PARTIDOS DE ALIANZA POPULAR» (Interior 1977, 000009; en Cataluña, `CC-AP` «COALICION ELECTORAL CONVIVENCIA CATALANA», 000017, acumulada a 000009); 1979, dentro de Coalición Democrática; 1982 y 1986, dentro de la coalición AP-PDP / Coalición Popular (fichas coalicion_democratica y coalicion_popular). Color: P465 de Wikidata. La inscripción de la federación (22/03/1977) es posterior a la fundación de 1976 y la descarga no da baja ni histórico: `alta` y `baja` siguen sin contrastar con el Registro (ADR-0021). La misma dirección (Génova, 13) tiene inscrito el «PARTIDO POPULAR (PP)» el 04/05/1977 (ficha pp)."

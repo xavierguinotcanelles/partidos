@@ -1,0 +1,17 @@
+id: coalicion_democratica
+nombre: "Coalición Democrática"
+siglas: "CD"
+tipo: coalicion
+ambito: estatal
+alta: "1979"
+alta_precision: anio
+baja: "1982"
+baja_precision: anio
+color: "#4CC417"
+wikidata: Q3393974
+estado: dudoso
+fuentes:
+  - interior-02197903-tota
+  - acad-montero-1987-reis-ap
+  - wikidata-q3393974-coaliciondemocratica
+notas: "Candidatura a las generales del 1-03-1979: Interior 1979, fichero 03, código 000007, siglas `CD`, «COALICION DEMOCRATICA» (la denominación no nombra a sus partidos; la candidatura 000069 `UPN` «UNION DEL PUEBLO NAVARRO» acumula sus votos a 000007 en el ámbito nacional). Montero (1987, REIS 39, pág. 12): «Pudo nacer así, en los primeros meses de 1979, Coalición Democrática […], formada por AP y por pequeños «partidos» de notables conservadores (sobre todo liberales y democristianos) que no se habían integrado en UCD»; la nota 3 nombra a José María de Areilza y Alfonso Osorio, no a sus partidos. Montero (pág. 16) trata la coalición de 1982 como «una nueva coalición»: ficha distinta de coalicion_popular. Alta 1979 (Montero; Wikidata P571); baja 1982: solo Wikidata (P576), sin contrastar. Falta el pacto de coalición de 1979 (BOE o JEC) para saber sus partidos. Color: P465 de Wikidata. El Registro no inscribe coaliciones."

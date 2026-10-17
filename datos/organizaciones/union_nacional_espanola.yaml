@@ -1,0 +1,16 @@
+id: union_nacional_espanola
+nombre: "Unión Nacional Española"
+siglas: "UNE"
+tipo: partido
+ambito: estatal
+alta: "1975"
+alta_precision: anio
+baja: "1979"
+baja_precision: anio
+color: "#0D2881"
+wikidata: Q1029869
+estado: dudoso
+fuentes:
+  - wikidata-q1029869-une
+  - acad-montero-1987-reis-ap
+notas: "Partido de la federación fundacional de Alianza Popular (1976). Montero (1987, REIS 39, pág. 10, nota 1) habla de «siete «partidos» federados» y nombra a sus dirigentes (Fraga, Fernández de la Mora, López Rodó, De la Fuente, Silva Muñoz, Martínez Esteruelas y Thomas de Carranza), no a los partidos; el nombre de este partido como fundador de AP sale solo de Wikidata (P1365 de AP). Wikidata (P361) la da como parte de AP de 1976 a 1978 y como «siguiente» a Derecha Democrática Española. Color: P465 de Wikidata. Tipo partido y siglas: Wikidata, sin contrastar. Ficha pendiente del Registro (ADR-0021): alta, baja, tipo y ámbito salen de la semilla Wikidata y no están contrastados; la descarga del Registro (2026-10-17) no trae ninguna formación con este nombre."

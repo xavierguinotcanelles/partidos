@@ -1,0 +1,15 @@
+id: union_liberal
+nombre: "Unión Liberal"
+siglas: "UL"
+tipo: partido
+ambito: estatal
+alta: "1983"
+alta_precision: anio
+baja: "1984"
+baja_precision: anio
+wikidata: Q2885792
+estado: dudoso
+fuentes:
+  - wikidata-q2885792-unionliberal
+  - wikidata-q47014901-ap-pdp-ul
+notas: "Solo Wikidata: partido «creado en 1983» (Q2885792, 1983-1984, años) y parte (P527) de la «coalición electoral entre Alianza Popular, Partido Demócrata Popular y Unión Liberal» de 1983 (Q47014901). Ninguna fuente copiada en la tanda #74 la nombra (ni Montero 1987 ni Magaldi 2022, ni las candidaturas de Interior a generales). Qué relación tiene con el Partido Demócrata Liberal que aparece en la candidatura `AP-PDP-PDL-` de 1982 (Interior, código 000007) y con el Partido Liberal de 1986 (ficha partido_liberal): sin fuente, no se une ni se relaciona. Registro (descarga 2026-10-17): «UNION LIBERAL (U.L.)», Plaza de las Cortes, 4, Madrid, inscrita el 05/07/1985, después de la baja de 1984 que da Wikidata; sin histórico no se sabe si es esta organización: alta y baja siguen pendientes del Registro (ADR-0021)."

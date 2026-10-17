@@ -1,0 +1,19 @@
+id: pdp
+nombre: "Partido Demócrata Popular"
+siglas: "PDP"
+tipo: partido
+ambito: estatal
+alta: "1982"
+alta_precision: anio
+baja: "1989-06-04"
+baja_precision: exacta
+color: "#008000"
+wikidata: Q634372
+estado: dudoso
+fuentes:
+  - wikidata-q634372-pdp
+  - wikidata-q28764767-pdp-1974
+  - acad-montero-1987-reis-ap
+  - acad-magaldi-2022-hernandez-mancha
+  - interior-02198210-tota
+notas: "Montero (1987, REIS 39, pág. 16): «fundado poco antes [de las generales de 1982] por un grupo de notables y parlamentarios pertenecientes al sector democristiano de UCD». Alta (1982, año) y baja (4-06-1989): Wikidata (P571/P576), sin contrastar. Concurrió en 1982 dentro de la coalición con AP: Interior 1982, fichero 03, código 000005 `AP-PDP` «ALIANZA POPULAR - PARTIDO DEMOCRATA POPULAR», con variantes territoriales acumuladas a 000005 (000006 `AP-PDP-PAR`, 000007 `AP-PDP-PDL-` con UCD, 000008 `AP-PDP-UV`, 000086 `UPN-AP-PDP`). No es el Partido Demócrata Popular de 1974-1977 (Wikidata Q28764767), que se integró en UCD. Magaldi (2022, Revista Historia Autónoma 21, pág. 122): en el PP de 1989 los socios de otras formaciones entraron «a título individual y nunca como una integración de esas formaciones»; Wikidata pone al PDP como «anterior» del PP sin decir de qué tipo: no se carga relación de linaje PDP → PP. Color: P465 de Wikidata. Registro (descarga 2026-10-17): no hay ningún «PARTIDO DEMOCRATA POPULAR»; hay una «DEMOCRACIA CRISTIANA (D.C.)» inscrita el 28/07/1982 en Madrid, que ninguna fuente copiada une al PDP: alta y baja siguen pendientes del Registro (ADR-0021)."
