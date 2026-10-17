@@ -1,0 +1,15 @@
+id: democrates_catalunya
+nombre: "Demòcrates de Catalunya"
+siglas: "Demòcrates"
+tipo: partido
+ambito: autonomico
+alta: "2015-08-31"
+alta_precision: exacta
+color: "#3385CA"
+wikidata: Q20667002
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-junts
+  - registro-descarga-2026-10-17
+  - wikidata-q20667002-democrates
+notas: "Firmante del pacto de la coalición JUNTS de las generales de 2023 (JEC, pág. 1), por su portavoz político. Registro de Partidos (descarga 2026-10-17): «DEMÒCRATES DE CATALUNYA (DEMÒCRATES)», C/ Calàbria 149-151, Barcelona, inscrito el 31/08/2015; `alta` es esa fecha de inscripción. Wikidata (P571) da el 12-07-2015 como fundación, sin contrastar. Pendiente del Registro (ADR-0021): tipo, número e histórico de la inscripción. Color: P465 de Wikidata."

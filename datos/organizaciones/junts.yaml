@@ -1,0 +1,36 @@
+id: junts
+nombre: "Junts per Catalunya"
+siglas: "JxCat"
+tipo: partido
+ambito: autonomico
+alta: "2017-11"
+alta_precision: mes
+color: "#00C4B2"
+wikidata: Q97155800
+wikidata_otros:
+  - Q43228047
+nombres:
+  - nombre: "Junts per Catalunya"
+    siglas: "JxCat"
+    desde: "2017-11"
+    desde_precision: mes
+    hasta: "2020-10-03"
+    hasta_precision: exacta
+    nota: "Coalición electoral formada para las autonómicas del 21-12-2017 y «Registrada el novembre del 2017» (Gran Enciclopèdia Catalana); Wikidata (Q43228047, alianza electoral) da el 13-11-2017, sin contrastar. Registro de Partidos (descarga 2026-10-17): «JUNTS PER CATALUNYA (JxCat)», Pasaje de Bofill 9-11, Barcelona, inscrito el 11/07/2018; con ese nombre firma los pactos de coalición JUNTS de 2019 ante la JEC."
+  - nombre: "Junts per Catalunya"
+    siglas: "JxCat"
+    desde: "2020-10-03"
+    desde_precision: exacta
+    nota: "Partido: estatutos art. 1 («es constitueix el partit polític denominat JUNTS PER CATALUNYA, que té per sigles l'acrònim JxCat»), en vigor con la ponencia organizativa aprobada el 3-10-2020 (disposición final 2). GEC: «El juliol del 2020 s'inicià el congrés fundacional de JxCat com a partit polític, que culminà el 3 d'octubre»; Wikidata (Q97155800) da el 25-07-2020 como inicio."
+estado: dudoso
+justificacion: junts_identidad
+fuentes:
+  - acad-gec-junts-per-catalunya
+  - acad-tornos-2020-iccaa-cataluna
+  - org-junts-estatuts-2020
+  - registro-descarga-2026-10-17
+  - jec-pacto-coalicion-junts-2019-04
+  - jec-pacto-coalicion-junts
+  - wikidata-q97155800-junts
+  - wikidata-q43228047-jxcat-2017
+notas: "Una ficha para la candidatura de 2017 y el partido de 2020 (ADR-0022, punto 3): la Gran Enciclopèdia Catalana trata a Junts per Catalunya en una sola entrada y habla de «convertir la coalició en un partit polític»; Tornos (2020, pág. 174) llama al pleito de 2020 la «batalla interna por el dominio del nombre de la coalición»; nombre, siglas y sede no cambian. Ver la justificación. Tipo de la ficha: el de su última forma (partido); la forma de coalición va en `nombres` y en `pdecat_coaligada_en_junts_2017`. Wikidata tiene dos entradas (Q97155800 partido, principal; Q43228047 alianza electoral 2017-2020). El partido inscrito en el Registro el 11-07-2018 es anterior al congreso fundacional de 2020: por qué, sin fuente copiada. Pendiente del Registro (ADR-0021): tipo, número e histórico de la inscripción. Color: P465 de Q97155800."

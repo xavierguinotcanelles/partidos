@@ -673,3 +673,45 @@ relaciones,cdc_miembro_de_ciu_2001,interior-02201111-tota,"Fichero 03, códigos 
 relaciones,cdc_miembro_de_ciu_2001,interior-02201512-tota,Fichero 03: ninguna candidatura CiU; DL (000588) y unio.cat (000425) por separado,
 relaciones,udc_miembro_de_ciu_2001,registro-descarga-2026-10-17,"CONVERGÈNCIA I UNIÓ (CiU) · C/ Còrsega, 331-333 y C/ Travessera de Gràcia, 17-21 · Barcelona · inscrita 16/05/2002",Sin baja en la descarga
 relaciones,udc_miembro_de_ciu_2001,interior-02201111-tota,"Fichero 03, códigos 000025 y 000026: CiU · CONVERGÈNCIA i UNIÓ",
+relaciones,pdecat_coaligada_en_junts_2017,acad-gec-junts-per-catalunya,Párrafo 1: «Coalició electoral»; «integrada en bona part per membres del PDeCAT»; «Registrada el novembre del 2017»,
+relaciones,pdecat_coaligada_en_junts_2017,acad-tornos-2020-iccaa-cataluna,"Págs. 174-175: «la batalla interna por el dominio del nombre de la coalición»; «el 7 de septiembre, a la ruptura del PdeCAT con JuntsxCat en el Congreso de los diputados y en el Parlamento»",
+relaciones,pdecat_coaligada_en_junts_2017,wikidata-q43228047-jxcat-2017,"P527 Q25713876 (PDeCAT), P580 2017-11-13, P582 2020-12-21",semilla
+relaciones,junts_escision_de_pdecat_2020,acad-tornos-2020-iccaa-cataluna,"Págs. 174-175: «lo que llevó, el 7 de septiembre, a la ruptura del PdeCAT con JuntsxCat»; «JuntsxCat y PdeCAT deciden concurrir por separado a las elecciones»",
+relaciones,junts_escision_de_pdecat_2020,acad-gec-junts-per-catalunya,"«Les setmanes següents es produí una onada de baixes de militants del PDeCAT, entre d'altres del mateix Puigdemont, una gran part dels quals passà a formar part del nou partit. El juliol del 2020 s'inicià el congrés fundacional de JxCat com a partit polític, que culminà el 3 d'octubre»",
+relaciones,junts_escision_de_pdecat_2020,org-junts-estatuts-2020,Art. 1 y disposición final 2 (pág. 33): en vigor «des de l'aprovació de la ponència organitzativa el 3 d'Octubre de 2020»,
+relaciones,junts_escision_de_pdecat_2020,wikidata-q97155800-junts,P571 2020-07-25,semilla
+relaciones,pdecat_coaligada_en_jxcat_junts_2019,jec-pacto-coalicion-junts-2019-04,"Pág. 1 (firmantes, 13-03-2019) y pág. 2 (ámbito: «BARCELONA, TARRAGONA, LLEIDA Y GIRONA»)",OCR
+relaciones,pdecat_coaligada_en_jxcat_junts_2019,jec-pacto-coalicion-junts-2019-11,"Pág. 1 (firmantes, 27-09-2019) y pág. 2 (ámbito: «BARCELONA, TARRAGONA, LLEIDA Y GIRONA»)",OCR
+relaciones,junts_coaligada_en_jxcat_junts_2019,jec-pacto-coalicion-junts-2019-04,"Pág. 1 (firmantes, 13-03-2019) y pág. 2 (ámbito: «BARCELONA, TARRAGONA, LLEIDA Y GIRONA»)",OCR
+relaciones,junts_coaligada_en_jxcat_junts_2019,jec-pacto-coalicion-junts-2019-11,"Pág. 1 (firmantes, 27-09-2019) y pág. 2 (ámbito: «BARCELONA, TARRAGONA, LLEIDA Y GIRONA»)",OCR
+relaciones,junts_coaligada_en_jxcat_junts_2023,jec-pacto-coalicion-junts,"Pág. 1 (firmantes, Barcelona, 8-06-2023; sello JEC 2023005804 de 09/06/2023) y pág. 2 (ámbito: «BARCELONA, TARRAGONA, LLEIDA y GIRONA»)",OCR
+relaciones,junts_coaligada_en_jxcat_junts_2023,jec-coaliciones-jec-23j,"C8. COALICIÓN ELECTORAL ""JUNTS"" · Siglas JUNTS · Ámbito: Comunidad Autónoma de Cataluña · pacto 69072",
+relaciones,mes_catalunya_coaligada_en_jxcat_junts_2023,jec-pacto-coalicion-junts,"Pág. 1 (firmantes, Barcelona, 8-06-2023; sello JEC 2023005804 de 09/06/2023) y pág. 2 (ámbito: «BARCELONA, TARRAGONA, LLEIDA y GIRONA»)",OCR
+relaciones,mes_catalunya_coaligada_en_jxcat_junts_2023,jec-coaliciones-jec-23j,"C8. COALICIÓN ELECTORAL ""JUNTS"" · Siglas JUNTS · Ámbito: Comunidad Autónoma de Cataluña · pacto 69072",
+relaciones,democrates_catalunya_coaligada_en_jxcat_junts_2023,jec-pacto-coalicion-junts,"Pág. 1 (firmantes, Barcelona, 8-06-2023; sello JEC 2023005804 de 09/06/2023) y pág. 2 (ámbito: «BARCELONA, TARRAGONA, LLEIDA y GIRONA»)",OCR
+relaciones,democrates_catalunya_coaligada_en_jxcat_junts_2023,jec-coaliciones-jec-23j,"C8. COALICIÓN ELECTORAL ""JUNTS"" · Siglas JUNTS · Ámbito: Comunidad Autónoma de Cataluña · pacto 69072",
+organizaciones,junts,acad-gec-junts-per-catalunya,Entrada «Junts per Catalunya»: «Coalició electoral»; «Registrada el novembre del 2017»; «convertir la coalició en un partit polític»; congreso fundacional de julio a 3-10-2020,
+organizaciones,junts,acad-tornos-2020-iccaa-cataluna,Pág. 174: «la batalla interna por el dominio del nombre de la coalición»,
+organizaciones,junts,org-junts-estatuts-2020,"Art. 1: «es constitueix el partit polític denominat JUNTS PER CATALUNYA, que té per sigles l'acrònim JxCat»; disposición final 2",
+organizaciones,junts,registro-descarga-2026-10-17,"JUNTS PER CATALUNYA (JxCat) · Pasaje de Bofill, 9-11 · Barcelona (Barcelona) · 11/07/2018",
+organizaciones,junts,jec-pacto-coalicion-junts-2019-04,Pág. 1: firma «JUNTS PER CATALUNYA» por su presidenta,OCR
+organizaciones,junts,jec-pacto-coalicion-junts,Pág. 1: firma «JUNTS PER CATALUNYA» por su secretario general,OCR
+organizaciones,junts,wikidata-q97155800-junts,P31 partido político; P571 2020-07-25; P465 00C4B2,semilla
+organizaciones,junts,wikidata-q43228047-jxcat-2017,P31 alianza electoral; P571 2017-11-13; P576 2020-12-21,semilla
+organizaciones,jxcat_junts,jec-pacto-coalicion-junts-2019-04,"Págs. 1-3: Barcelona, 13-03-2019; denominación «JUNTS»; ámbito Barcelona, Tarragona, Lleida y Girona; denominación por circunscripción «JUNTS PER CATALUNYA - JUNTS»",OCR
+organizaciones,jxcat_junts,jec-pacto-coalicion-junts-2019-11,"Págs. 1-3: Barcelona, 27-09-2019; denominación «JUNTS»; denominación por circunscripción «JUNTS PER CATALUNYA - JUNTS»",OCR
+organizaciones,jxcat_junts,jec-pacto-coalicion-junts,"Págs. 1-3: Barcelona, 8-06-2023; denominación y siglas «JUNTS»; por circunscripción «JUNTS PER CATALUNYA - JUNTS», siglas «JxCAT - JUNTS»",OCR
+organizaciones,jxcat_junts,jec-coaliciones-jec-28a2019,"C8. COALICIÓN ELECTORAL ""JUNTS"" · Siglas JUNTS · Ámbito: Comunidad Autónoma de Cataluña",
+organizaciones,jxcat_junts,jec-coaliciones-jec-10n2019,"C4. COALICIÓN ELECTORAL ""JUNTS"" · Siglas JUNTS · Ámbito: Comunidad Autónoma de Cataluña",
+organizaciones,jxcat_junts,jec-coaliciones-jec-23j,"C8. COALICIÓN ELECTORAL ""JUNTS"" · Siglas JUNTS · Ámbito: Comunidad Autónoma de Cataluña",
+organizaciones,jxcat_junts,boe-a-2023-15066,"Congreso: Barcelona, candidatura 10 «JUNTS (JUNTS)», pág. 90033; Girona, 8 «JUNTS PER CATALUNYA-JUNTS (J x CAT-JUNTS)», pág. 90089; Lleida, 8 «JUNTS PER CATALUNYA-JUNTS (JxCAT-JUNTS)», pág. 90119; Tarragona, 11, pág. 90207",
+organizaciones,jxcat_junts,interior-02201904-tota,"03021904.DAT, registro 40 (código 000049): JxCAT-JUNTS · JUNTS PER CATALUNYA-JUNTS",
+organizaciones,jxcat_junts,interior-02201911-tota,"03021911.DAT, registro 36 (código 000041): JxCAT-JUNTS · JUNTS PER CATALUNYA-JUNTS",
+organizaciones,jxcat_junts,interior-02202307-tota,"03022307.DAT, registro 54 (código 000057): JxCAT - JUNTS · JUNTS PER CATALUNYA - JUNTS",
+organizaciones,jxcat_junts,wikidata-q62596367-jxcat-junts,P31 alianza electoral; P571 2019-03-13; P527 con fechas; P465 ED5975,semilla
+organizaciones,mes_catalunya,jec-pacto-coalicion-junts,"Pág. 1: «MOVIMENT D'ESQUERRES DE CATALUNYA», por su coordinador general",OCR
+organizaciones,mes_catalunya,registro-descarga-2026-10-17,"MOVIMENT D'ESQUERRES DE CATALUNYA (MEScat) · Avinguda Diagonal nº 449, 4º · Barcelona (Barcelona) · 08/04/2013",
+organizaciones,mes_catalunya,wikidata-q20103988-mes,P571 2015-01-24; P1813 MES; P465 E73B39,semilla
+organizaciones,democrates_catalunya,jec-pacto-coalicion-junts,"Pág. 1: «DEMÓCRATES DE CATALUNYA», por su portavoz político",OCR
+organizaciones,democrates_catalunya,registro-descarga-2026-10-17,"DEMÒCRATES DE CATALUNYA (DEMÒCRATES) · c/ Calàbria, 149-151 entresuelo 2º · Barcelona (Barcelona) · 31/08/2015",
+organizaciones,democrates_catalunya,wikidata-q20667002-democrates,P571 2015-07-12; P465 3385CA,semilla
