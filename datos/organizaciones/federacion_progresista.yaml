@@ -1,0 +1,14 @@
+id: federacion_progresista
+nombre: "Federación Progresista"
+siglas: "FP"
+tipo: partido
+ambito: estatal
+alta: "1984-12-13"
+alta_precision: exacta
+wikidata: Q3395148
+estado: confirmado
+fuentes:
+  - registro-descarga-2026-10-17
+  - org-iu-programa-generales-1986
+  - wikidata-q3395148-fedprogresista
+notas: "Registro de Partidos (descarga 2026-10-17): «FEDERACION PROGRESISTA», inscrita el 13/12/1984 (Madrid (Madrid)); `alta` es esa fecha de inscripción, que puede no ser la fundación. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Fundador de IU en 1986 según el programa electoral de IU para el 22-06-1986."
