@@ -1,0 +1,15 @@
+id: udc_idcc
+nombre: "Unió del Centre i la Democràcia Cristiana de Catalunya"
+siglas: "UDC-IDCC"
+tipo: coalicion
+ambito: autonomico
+alta: "1977"
+alta_precision: anio
+baja: "1978"
+baja_precision: anio
+wikidata: Q9091709
+estado: dudoso
+fuentes:
+  - interior-02197706-tota
+  - wikidata-q9091709-udc-idcc
+notas: "Interior 1977, fichero 03, código 000088 `UDC-IDCC` «UNIO DEL CENTRE I LA DEM. CRISTIANA DE CATALUNYA»: la candidatura no nombra a sus partidos. Alta 1977 y baja 1978: solo Wikidata (P571/P576), sin contrastar. Wikidata pone a UDC (Q1628993) como parte (P361) de ella; ninguna fuente copiada nombra a sus otros socios. Sin color."

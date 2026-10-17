@@ -1,0 +1,26 @@
+id: cdc
+nombre: "Convergència Democràtica de Catalunya"
+siglas: "CDC"
+tipo: partido
+ambito: autonomico
+alta: "1974-11-17"
+alta_precision: exacta
+baja: "2016-07"
+baja_precision: mes
+color: "#002782"
+wikidata: Q1129443
+estado: dudoso
+fuentes:
+  - wikidata-q1129443-cdc
+  - registro-descarga-2026-10-17
+  - interior-02197706-tota
+  - interior-02197903-tota
+  - interior-02198210-tota
+  - interior-02198910-tota
+  - interior-02201512-tota
+  - interior-02201606-tota
+  - acad-tornos-2015-iccaa-cataluna
+  - acad-tornos-2016-iccaa-cataluna
+  - prensa-ara-2016-07-10-convergencia-refundada
+  - prensa-vilaweb-2016-07-10-pdc-nom-definitiu
+notas: "Alta 17-11-1974: solo Wikidata (P571), sin contrastar; pendiente del Registro (ADR-0021). Registro de Partidos (descarga 2026-10-17): «CONVERGÈNCIA DEMOCRÀTICA DE CATALUNYA (CDC)», C/ Consell de Cent, 113-115, bajos, Barcelona, inscrita el 23/02/1977; la descarga no da baja ni histórico, y el partido sigue en ella: la baja de 2016 es la política, no la de la inscripción. Baja julio de 2016: la reunión de «congressistes» del sábado 09-07-2016 (día deducido de «aquest dissabte» en una crónica del 10-07) que da nombre al Partit Demòcrata Català, «la Convergència refundada» (Ara, 10-07-2016; también VilaWeb, 10-07-2016; ver la relación `cdc_refundacion_en_pdecat_2016`); Wikidata (P576) da el 08-07-2016 y Tornos (2016, Informe Comunidades Autónomas, pág. 208) habla de «la desaparición de Convergència Democràtica de Catalunya, el 10 de junio de 2016»: fechas que no casan, por eso solo el mes. Tornos (2015, pág. 169) ya dice que CDC «decide iniciar un proceso de refundación». Candidaturas al Congreso (Interior, fichero 03): 1977, dentro de `PDPC` «COALICION ELECT.PACTE DEMOCRATIC PER CATALUNYA» (código 000066), que no nombra a sus partidos; de 1979 a 2011, dentro de CiU (1979, 000010 `CIU` «COALICION CONVERGENCIA Y UNIO»; 1982, 000018 `CIU` «CONVERGENCIA I UNIO»; 1989, 000055 `CIU` «CONVERGENCIA I UNIO»); 2015, `DL` «DEMOCRÀCIA I LLIBERTAT. CONVERGÈNCIA. DEMÒCRATES.» (000588 y otras, acumuladas a 904991; coalición no cargada); 2016, sola: 000010 `CDC` «CONVERGÈNCIA DEMOCRÀTICA DE CATALUNYA». Color: P465 de Wikidata."

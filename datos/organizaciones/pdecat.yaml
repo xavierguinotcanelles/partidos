@@ -1,0 +1,33 @@
+id: pdecat
+nombre: "Partit Demòcrata Europeu Català"
+siglas: "PDeCAT"
+tipo: partido
+ambito: autonomico
+alta: "2016-07-10"
+alta_precision: exacta
+baja: "2023-10-28"
+baja_precision: exacta
+color: "#0081C2"
+wikidata: Q25713876
+nombres:
+  - nombre: "Partit Demòcrata Català"
+    siglas: "PDC"
+    desde: "2016-07-10"
+    desde_precision: exacta
+    hasta: "2016-10-22"
+    hasta_precision: exacta
+    nota: "Ara (10-07-2016): «La Convergència refundada ja té nom: Partit Demòcrata Català»; VilaWeb (10-07-2016): «Partit Demòcrata Català (PDC), aquest serà el nom definitiu del partit que agafa el relleu de l'antiga CDC». Fin: Wikidata (P1813 `PDC`, de 10-07-2016 a 22-10-2016), sin contrastar."
+  - nombre: "Partit Demòcrata Europeu Català"
+    siglas: "PDeCAT"
+    desde: "2016-10-22"
+    desde_precision: exacta
+    nota: "Wikidata (P1813 `PDeCAT` desde el 22-10-2016), sin contrastar. Tornos (2016, Informe Comunidades Autónomas, pág. 208): «El nuevo partido pasa a denominarse Partit Demòcrata Europeu Català, PDeCAT»."
+estado: dudoso
+justificacion: pdecat_nombres
+fuentes:
+  - wikidata-q25713876-pdecat
+  - acad-tornos-2016-iccaa-cataluna
+  - prensa-ara-2016-07-10-convergencia-refundada
+  - prensa-vilaweb-2016-07-10-pdc-nom-definitiu
+  - registro-descarga-2026-10-17
+notas: "Alta 10-07-2016: Wikidata (P571) y la fecha de las dos crónicas (Ara y VilaWeb, 10-07-2016); Ara dice que el nombre lo eligieron los «congressistes» «aquest dissabte al matí». Baja 28-10-2023: solo Wikidata (P576), sin contrastar y fuera del periodo de esta tanda. Pendiente del Registro (ADR-0021): la descarga del Registro de 2026-10-17 no trae ninguna inscripción con «PARTIT DEMOCRATA» ni «PDECAT». Tornos (2016, pág. 208) da como presidente a Artur Mas y como coordinadora general a Marta Pascal. Ver la relación `cdc_refundacion_en_pdecat_2016`. Color: P465 de Wikidata."

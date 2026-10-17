@@ -1,0 +1,20 @@
+id: udc
+nombre: "Unió Democràtica de Catalunya"
+siglas: "UDC"
+tipo: partido
+ambito: autonomico
+alta: "1931-11-07"
+alta_precision: exacta
+baja: "2017-03-24"
+baja_precision: exacta
+wikidata: Q1628993
+estado: dudoso
+fuentes:
+  - wikidata-q1628993-udc
+  - registro-descarga-2026-10-17
+  - interior-02197706-tota
+  - interior-02197903-tota
+  - interior-02201512-tota
+  - acad-vintro-2001-iccaa-cataluna
+  - prensa-vilaweb-2015-06-17-unio-liquida-ciu
+notas: "Alta 07-11-1931 y baja 24-03-2017: solo Wikidata (P571/P576), sin contrastar; pendiente del Registro (ADR-0021): la descarga del Registro del 2026-10-17 no trae ninguna inscripción con el nombre de Unió Democràtica de Catalunya (sí «UNIO DEMOCRATICA DEL PAIS VALENCIA» y «UNIO DEMOCRATICA DE MENORCA», que no son esta). Candidaturas al Congreso (Interior, fichero 03): 1977, `UDC-IDCC` «UNIO DEL CENTRE I LA DEM. CRISTIANA DE CATALUNYA» (código 000088; ficha udc_idcc); de 1979 a 2011, dentro de CiU (1979, 000010 `CIU` «COALICION CONVERGENCIA Y UNIO»); 2015, sola: `unio.cat` «UNIÓ DEMOCRÀTICA DE CATALUNYA» (000425 y 000560, acumuladas a 904223). Vintró (2001, Informe Comunidades Autónomas, pág. 242) la llama «UDC» y a su líder, Duran Lleida, «el máximo líder de UDC». Sin color: Wikidata no tiene P465 y ninguna fuente copiada da uno."

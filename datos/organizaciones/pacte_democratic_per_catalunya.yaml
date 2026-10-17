@@ -1,0 +1,15 @@
+id: pacte_democratic_per_catalunya
+nombre: "Pacte Democràtic per Catalunya"
+siglas: "PDPC"
+tipo: coalicion
+ambito: autonomico
+alta: "1977-05-03"
+alta_precision: exacta
+baja: "1978"
+baja_precision: anio
+wikidata: Q9054167
+estado: dudoso
+fuentes:
+  - interior-02197706-tota
+  - wikidata-q9054167-pactedemocratic
+notas: "Interior 1977, fichero 03, código 000066 `PDPC` «COALICION ELECT.PACTE DEMOCRATIC PER CATALUNYA»: la candidatura no nombra a sus partidos. Alta 03-05-1977 y baja 1978: solo Wikidata (P571/P576), sin contrastar. Que CDC estuviera en ella solo lo dice Wikidata (P361 de Q1129443, 1977-1979): ver la relación `cdc_coaligada_en_pacte_democratic_per_catalunya_1977`. Sin color."

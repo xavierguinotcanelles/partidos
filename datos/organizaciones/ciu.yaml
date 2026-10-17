@@ -1,0 +1,40 @@
+id: ciu
+nombre: "Convergència i Unió"
+siglas: "CiU"
+tipo: federacion
+ambito: autonomico
+alta: "1978-09-19"
+alta_precision: exacta
+baja: "2015-06"
+baja_precision: mes
+color: "#002782"
+wikidata: Q150398
+nombres:
+  - nombre: "Convergència i Unió"
+    siglas: "CiU"
+    desde: "1978-09-19"
+    desde_precision: exacta
+    hasta: "2001-12"
+    hasta_precision: mes
+    nota: "Coalición de CDC y UDC. Fecha de inicio: Wikidata (P571), sin contrastar; primera candidatura, generales del 01-03-1979: Interior 1979, fichero 03, código 000010 `CIU` «COALICION CONVERGENCIA Y UNIO». De 1982 a 2000 la candidatura es `CIU` «CONVERGENCIA I UNIO» (1982 000018, 1986 000017, 1989 000055, 1993 000055, 1996 000015, 2000 000026). Fin de la forma de coalición: diciembre de 2001 (Vintró, ver la segunda entrada)."
+  - nombre: "Convergència i Unió"
+    siglas: "CiU"
+    desde: "2001-12"
+    desde_precision: mes
+    hasta: "2015-06"
+    hasta_precision: mes
+    nota: "Federación de CDC y UDC: Vintró (2001, Informe Comunidades Autónomas, pág. 242) habla de «la nueva federación de CiU constituida en diciembre» y (pág. 249) de «la refundación de CiU con la conversión de la coalición en federación»; Wikidata da un segundo P571 el 02-12-2001. Registro de Partidos (descarga 2026-10-17): «CONVERGÈNCIA I UNIÓ (CiU)», C/ Còrsega, 331-333 y C/ Travessera de Gràcia, 17-21, Barcelona, inscrita el 16/05/2002. Candidaturas: 2004 000033 `CiU` «CONVERGENCIA i UNIO»; 2008 000060 y 000061; 2011 000025 y 000026 `CiU` «CONVERGÈNCIA i UNIÓ». Fin: junio de 2015 (ver la nota de la ficha)."
+estado: dudoso
+justificacion: ciu_identidad
+fuentes:
+  - wikidata-q150398-ciu
+  - interior-02197903-tota
+  - interior-02198210-tota
+  - interior-02198910-tota
+  - interior-02201111-tota
+  - interior-02201512-tota
+  - acad-vintro-2001-iccaa-cataluna
+  - registro-descarga-2026-10-17
+  - prensa-vilaweb-2015-06-17-unio-liquida-ciu
+  - prensa-naciodigital-2015-06-17-cdc-federacio-trencada
+notas: "Una ficha para la coalición de 1978 y la federación de 2001 (ADR-0022, punto 3): Vintró (2001, págs. 248-249) habla de «los veinte años de vida de la coalición» y de su «conversión» en federación, la misma CiU que cambia de forma; ver la justificación. Tipo de la ficha: el de su última forma (federación); el cambio de forma va en `nombres` y en las relaciones de CDC y UDC (`coaligada_en` hasta 2001, `miembro_de` desde 2001). Fin: el 17-06-2015 la dirección de UDC decide salir del Govern y CDC da «per trencada la federació» (VilaWeb y Nació Digital, 17-06-2015); Wikidata (P576) da el 18-06-2015. En las generales de 2015 CDC concurre en Democràcia i Llibertat y UDC sola. Baja `dudoso` y pendiente del Registro (ADR-0021): la descarga del Registro de 2026-10-17 sigue dando la inscripción de 2002, sin baja; ninguna fuente copiada documenta la liquidación de la federación. Color: P465 de Wikidata (el mismo que CDC)."
