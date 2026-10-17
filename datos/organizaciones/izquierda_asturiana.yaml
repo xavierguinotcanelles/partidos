@@ -2,12 +2,12 @@ id: izquierda_asturiana
 nombre: "Izquierda Asturiana"
 tipo: partido
 ambito: autonomico
-alta: "1992"
-alta_precision: anio
+alta: "1992-05-11"
+alta_precision: exacta
 color: "#FFCC00"
 wikidata: Q3307624
-estado: dudoso
+estado: confirmado
 fuentes:
   - jec-pacto-coalicion-sumar
   - wikidata-q3307624-izqasturiana
-notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 8), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Ámbito Asturias."
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 8), que no da siglas, tipo ni ámbito. Registro de Partidos (descarga 2026-10-17): «IZQUIERDA ASTURIANA» (IAS), inscrita el 11/05/1992 (Oviedo (Asturias)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Antes: alta 1992 (Wikidata); la fecha del Registro es la de la inscripción vigente y puede no ser la fundación. Color: P465 de Wikidata. Ámbito Asturias."

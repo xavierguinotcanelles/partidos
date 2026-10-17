@@ -2,11 +2,11 @@ id: mas_madrid
 nombre: "Más Madrid"
 tipo: partido
 ambito: autonomico
-alta: "2018-11-22"
+alta: "2019-02-07"
 alta_precision: exacta
 wikidata: Q59986766
-estado: dudoso
+estado: confirmado
 fuentes:
   - jec-pacto-coalicion-sumar
   - wikidata-q59986766-masmadrid
-notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 6), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Sin color: Wikidata da dos (P465)."
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 6), que no da siglas, tipo ni ámbito. Registro de Partidos (descarga 2026-10-17): «MÁS MADRID», inscrita el 07/02/2019 (Madrid (Madrid)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Antes: alta 2018-11-22 (Wikidata); la fecha del Registro es la de la inscripción vigente y puede no ser la fundación. Sin color: Wikidata da dos (P465)."

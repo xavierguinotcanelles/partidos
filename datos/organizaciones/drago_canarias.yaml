@@ -2,9 +2,11 @@ id: drago_canarias
 nombre: "Partido Drago Canarias"
 tipo: partido
 ambito: autonomico
+alta: "2022-12-16"
+alta_precision: exacta
 wikidata: Q115497819
-estado: dudoso
+estado: confirmado
 fuentes:
   - jec-pacto-coalicion-sumar
   - wikidata-q115497819-drago
-notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Ámbito Canarias. Wikidata no da fecha de inicio."
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Registro de Partidos (descarga 2026-10-17): «PARTIDO DRAGO CANARIAS» (D.R.G), inscrita el 16/12/2022 (Telde (Palmas, Las)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Ámbito Canarias. Wikidata no da fecha de inicio."

@@ -2,14 +2,14 @@ id: mas_pais
 nombre: "Más País"
 tipo: partido
 ambito: estatal
-alta: "2019"
-alta_precision: anio
+alta: "2021-03-09"
+alta_precision: exacta
 baja: "2023"
 baja_precision: anio
 color: "#0FDEC4"
 wikidata: Q68609827
-estado: dudoso
+estado: confirmado
 fuentes:
   - jec-pacto-coalicion-sumar
   - wikidata-q68609827-maspais
-notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 5), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Wikidata da fin en 2023 (P576, solo año) sin sucesor; firmó el pacto el 9-06-2023."
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 5), que no da siglas, tipo ni ámbito. Registro de Partidos (descarga 2026-10-17): «MÁS PAÍS», inscrita el 09/03/2021 (Madrid (Madrid)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Antes: alta 2019 (Wikidata); la fecha del Registro es la de la inscripción vigente y puede no ser la fundación. Figura en la descarga, así que consta inscrita a 2026-10-17 pese a la baja de la ficha (Wikidata); la baja queda sin contrastar. Color: P465 de Wikidata. Wikidata da fin en 2023 (P576, solo año) sin sucesor; firmó el pacto el 9-06-2023."

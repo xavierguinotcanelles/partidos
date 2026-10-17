@@ -3,10 +3,10 @@ nombre: "Partido Comunista de España"
 siglas: "PCE"
 tipo: partido
 ambito: estatal
-alta: "1921-04-14"
+alta: "1977-04-09"
 alta_precision: exacta
 wikidata: Q478811
-estado: dudoso
+estado: confirmado
 fuentes:
   - wikidata-q478811-pce
-notas: "Miembro de IU desde 1986 según Wikidata (P463). Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados."
+notas: "Miembro de IU desde 1986 según Wikidata (P463). Registro de Partidos (descarga 2026-10-17): «PARTIDO COMUNISTA DE ESPAÑA» (P.C.E.), inscrita el 09/04/1977 (Madrid (Madrid)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Antes: alta 1921-04-14 (Wikidata); la fecha del Registro es la de la inscripción vigente y puede no ser la fundación."

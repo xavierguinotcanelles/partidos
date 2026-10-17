@@ -8,8 +8,8 @@ baja: "2024-03"
 baja_precision: mes
 color: "#6E236E"
 wikidata: Q69961536
-estado: dudoso
+estado: confirmado
 fuentes:
   - jec-pacto-coalicion-sumar
   - wikidata-q69961536-ecp
-notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 6), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Ámbito Cataluña. Q69961536 es el partido (Wikidata, solo etiqueta en catalán); la coalición electoral homónima es Q21272208."
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 6), que no da siglas, tipo ni ámbito. Registro de Partidos (descarga 2026-10-17): «EN COMÚ PODEM», inscrita el 21/01/2016 (Barcelona (Barcelona)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Figura en la descarga, así que consta inscrita a 2026-10-17 pese a la baja de la ficha (Wikidata); la baja queda sin contrastar. Color: P465 de Wikidata. Ámbito Cataluña. Q69961536 es el partido (Wikidata, solo etiqueta en catalán); la coalición electoral homónima es Q21272208."

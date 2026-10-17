@@ -3,12 +3,12 @@ nombre: "Chunta Aragonesista"
 siglas: "CHA"
 tipo: partido
 ambito: autonomico
-alta: "1986-06-29"
+alta: "1986-10-22"
 alta_precision: exacta
 color: "#AD0017"
 wikidata: Q1089640
-estado: dudoso
+estado: confirmado
 fuentes:
   - jec-pacto-coalicion-sumar
   - wikidata-q1089640-cha
-notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Ámbito Aragón."
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Registro de Partidos (descarga 2026-10-17): «CHUNTA ARAGONESISTA» (CHA), inscrita el 22/10/1986 (Zaragoza (Zaragoza)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Antes: alta 1986-06-29 (Wikidata); la fecha del Registro es la de la inscripción vigente y puede no ser la fundación. Color: P465 de Wikidata. Ámbito Aragón."

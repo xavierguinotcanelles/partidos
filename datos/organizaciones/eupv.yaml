@@ -3,10 +3,10 @@ nombre: "Esquerra Unida del País Valencià"
 siglas: "EUPV"
 tipo: partido
 ambito: autonomico
-alta: "1986"
-alta_precision: anio
+alta: "1992-01-22"
+alta_precision: exacta
 wikidata: Q3394396
-estado: dudoso
+estado: confirmado
 fuentes:
   - wikidata-q3394396-eupv
-notas: "Parte de IU (P361) según Wikidata. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados."
+notas: "Parte de IU (P361) según Wikidata. Registro de Partidos (descarga 2026-10-17): «ESQUERRA UNIDA DEL PAIS VALENCIA» (EUPV), inscrita el 22/01/1992 (València (Valencia/Vàlencia)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Antes: alta 1986 (Wikidata); la fecha del Registro es la de la inscripción vigente y puede no ser la fundación."

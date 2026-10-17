@@ -3,12 +3,12 @@ nombre: "Izquierda Unida"
 siglas: "IU"
 tipo: federacion
 ambito: estatal
-alta: "1986"
-alta_precision: anio
+alta: "1992-11-02"
+alta_precision: exacta
 color: "#732021"
 wikidata: Q623740
-estado: dudoso
+estado: confirmado
 fuentes:
   - jec-pacto-coalicion-sumar
   - wikidata-q623740-iu
-notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 5), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Tipo federación según Wikidata (P31 federación de partidos)."
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 5), que no da siglas, tipo ni ámbito. Registro de Partidos (descarga 2026-10-17): «IZQUIERDA UNIDA» (I.U.), inscrita el 02/11/1992 (Madrid (Madrid)); `alta` es esa fecha de inscripción. La descarga no trae tipo ni número de inscripción: el tipo sigue sin contrastar y `registro` queda vacío. Antes: alta 1986 (Wikidata); la fecha del Registro es la de la inscripción vigente y puede no ser la fundación. Color: P465 de Wikidata. Tipo federación según Wikidata (P31 federación de partidos)."
