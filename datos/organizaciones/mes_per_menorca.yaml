@@ -1,0 +1,13 @@
+id: mes_per_menorca
+nombre: "Més per Menorca"
+tipo: partido
+ambito: provincial
+alta: "2014-07-21"
+alta_precision: exacta
+color: "#005151"
+wikidata: Q20101171
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q20101171-mesmenorca
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Ámbito insular (Menorca): el esquema no tiene «insular» y se usa «provincial». Siglas sin fijar: Wikidata da tres (MxMe, MpM, Més Menorca)."

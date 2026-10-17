@@ -1,0 +1,15 @@
+id: sumar
+nombre: "SUMAR"
+siglas: "SUMAR"
+tipo: coalicion
+ambito: estatal
+alta: "2023-06-09"
+alta_precision: exacta
+color: "#EF4B91"
+wikidata: Q112098527
+estado: confirmado
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - jec-coaliciones-jec-23j
+  - wikidata-q112098527-sumar
+notas: "Coalición electoral constituida ante la JEC para las generales de 2023: pacto firmado «En Madrid, 9 de junio de 2023» (pág. 5), subsanado el 13-06-2023 (registro JEC 2023005962). Ámbito estatal: candidaturas en todas las circunscripciones al Congreso (pág. 9). Color: P465 de Wikidata."

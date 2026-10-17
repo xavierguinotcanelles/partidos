@@ -1,0 +1,13 @@
+id: izquierda_asturiana
+nombre: "Izquierda Asturiana"
+tipo: partido
+ambito: autonomico
+alta: "1992"
+alta_precision: anio
+color: "#FFCC00"
+wikidata: Q3307624
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q3307624-izqasturiana
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 8), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Ámbito Asturias."

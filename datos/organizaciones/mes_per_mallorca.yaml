@@ -1,0 +1,13 @@
+id: mes_per_mallorca
+nombre: "Més per Mallorca"
+siglas: "MÉS"
+tipo: partido
+ambito: provincial
+alta: "2010"
+alta_precision: anio
+wikidata: Q11694799
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q11694799-mesmallorca
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Ámbito insular (Mallorca): el esquema no tiene «insular» y se usa «provincial». Wikidata da dos inicios (2010 y 2021-11-26); se toma el primero. Sin color: Wikidata da dos."

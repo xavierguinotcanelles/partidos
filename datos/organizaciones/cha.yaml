@@ -1,0 +1,14 @@
+id: cha
+nombre: "Chunta Aragonesista"
+siglas: "CHA"
+tipo: partido
+ambito: autonomico
+alta: "1986-06-29"
+alta_precision: exacta
+color: "#AD0017"
+wikidata: Q1089640
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q1089640-cha
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Ámbito Aragón."

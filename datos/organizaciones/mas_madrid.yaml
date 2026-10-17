@@ -1,0 +1,12 @@
+id: mas_madrid
+nombre: "Más Madrid"
+tipo: partido
+ambito: autonomico
+alta: "2018-11-22"
+alta_precision: exacta
+wikidata: Q59986766
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q59986766-masmadrid
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 6), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Sin color: Wikidata da dos (P465)."

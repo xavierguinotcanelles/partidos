@@ -1,0 +1,14 @@
+id: movimiento_sumar
+nombre: "Movimiento Sumar"
+siglas: "SMR"
+tipo: partido
+ambito: estatal
+alta: "2023-05-31"
+alta_precision: exacta
+color: "#E61455"
+wikidata: Q119458764
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q119458764-movimientosumar
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 5), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata."

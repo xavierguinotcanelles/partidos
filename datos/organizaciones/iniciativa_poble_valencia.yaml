@@ -1,0 +1,13 @@
+id: iniciativa_poble_valencia
+nombre: "Iniciativa del Poble Valencià"
+tipo: partido
+ambito: autonomico
+alta: "2007-10-20"
+alta_precision: exacta
+color: "#C7142C"
+wikidata: Q11683233
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q11683233-idpv
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Ámbito Comunitat Valenciana."

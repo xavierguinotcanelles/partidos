@@ -1,0 +1,12 @@
+id: alianza_verde
+nombre: "Alianza Verde"
+tipo: partido
+ambito: estatal
+alta: "2021-06-10"
+alta_precision: exacta
+wikidata: Q107181558
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q107181558-alianzaverde
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 8), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados."

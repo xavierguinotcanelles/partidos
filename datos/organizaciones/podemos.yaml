@@ -1,0 +1,13 @@
+id: podemos
+nombre: "Podemos"
+tipo: partido
+ambito: estatal
+alta: "2014-03-11"
+alta_precision: exacta
+color: "#9269F5"
+wikidata: Q16059622
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q16059622-podemos
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 5), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata."

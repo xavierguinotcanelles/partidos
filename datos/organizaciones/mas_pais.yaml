@@ -1,0 +1,15 @@
+id: mas_pais
+nombre: "Más País"
+tipo: partido
+ambito: estatal
+alta: "2019"
+alta_precision: anio
+baja: "2023"
+baja_precision: anio
+color: "#0FDEC4"
+wikidata: Q68609827
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q68609827-maspais
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 5), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Wikidata da fin en 2023 (P576, solo año) sin sucesor; firmó el pacto el 9-06-2023."

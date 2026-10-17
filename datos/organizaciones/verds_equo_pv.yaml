@@ -1,0 +1,12 @@
+id: verds_equo_pv
+nombre: "Verds Equo del País Valencià"
+tipo: partido
+ambito: autonomico
+alta: "2014"
+alta_precision: anio
+wikidata: Q18397954
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q18397954-verdsequopv
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Ámbito Comunitat Valenciana. Wikidata Q18397954 (etiqueta «Verds» / «Verds - Compromís», alias «Verds Equo del País Valencià»)."

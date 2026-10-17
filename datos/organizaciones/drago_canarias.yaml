@@ -1,0 +1,10 @@
+id: drago_canarias
+nombre: "Partido Drago Canarias"
+tipo: partido
+ambito: autonomico
+wikidata: Q115497819
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q115497819-drago
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 7), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Ámbito Canarias. Wikidata no da fecha de inicio."

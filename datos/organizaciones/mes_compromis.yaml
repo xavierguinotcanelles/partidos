@@ -1,0 +1,13 @@
+id: mes_compromis
+nombre: "Més Compromís"
+tipo: federacion
+ambito: autonomico
+alta: "2021"
+alta_precision: anio
+color: "#DA5C31"
+wikidata: Q108047697
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q108047697-mescompromis
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 6), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. Ámbito Comunitat Valenciana. Wikidata Q108047697 «Més - Compromís» (alias Més Compromís, descrita como federación de partidos); hay otra entrada Q69962631 «Més Compromís» descrita como coalición electoral de 2019."

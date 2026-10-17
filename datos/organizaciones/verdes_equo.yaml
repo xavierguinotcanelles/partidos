@@ -1,0 +1,13 @@
+id: verdes_equo
+nombre: "Verdes Equo"
+tipo: partido
+ambito: estatal
+alta: "2011-06-04"
+alta_precision: exacta
+color: "#46922B"
+wikidata: Q3320917
+estado: dudoso
+fuentes:
+  - jec-pacto-coalicion-sumar
+  - wikidata-q3320917-verdesequo
+notas: "Firmante del pacto de la coalición SUMAR (Anexo I, pág. 6), que no da siglas, tipo ni ámbito. Ficha pendiente del Registro (ADR-0021): alta, registro, tipo jurídico y ámbito salen de la semilla Wikidata y no están contrastados. Color: P465 de Wikidata. En Wikidata con la etiqueta «Partido Verde» y los alias Equo y Verdes Equo; la fecha de inicio es la de Equo."
