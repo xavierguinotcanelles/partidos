@@ -1,0 +1,16 @@
+id: eaj_pnv
+nombre: "Partido Nacionalista Vasco"
+siglas: "EAJ-PNV"
+tipo: partido
+ambito: autonomico
+alta: "1895"
+alta_precision: anio
+color: "#4AAE4A"
+wikidata: Q43093
+nombres:
+  - nombre: "Partido Nacionalista Vasco"
+    siglas: "EAJ-PNV"
+estado: dudoso
+fuentes:
+  - wikidata-q43093-eaj-pnv
+notas: "Semilla Wikidata Q43093 (alta P571: 1895, anio; color P465), pendiente del Registro (ADR-0021): tipo, número de inscripción, alta registral e histórico de denominaciones sin contrastar. Tipo partido: Wikidata (P31: partido político y también coalición electoral, sin P527); se toma partido, dudoso. Denominación proclamada en 2023: «EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)»; Wikidata da solo «EAJ» como siglas. Ámbito: País Vasco y Navarra. Color: P465 de Wikidata. Ficha mínima: sin linaje ni composición."

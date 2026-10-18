@@ -1,0 +1,16 @@
+id: erc
+nombre: "Esquerra Republicana de Catalunya"
+siglas: "ERC"
+tipo: partido
+ambito: autonomico
+alta: "1931-03-19"
+alta_precision: exacta
+color: "#FFB232"
+wikidata: Q150068
+nombres:
+  - nombre: "Esquerra Republicana de Catalunya"
+    siglas: "ERC"
+estado: dudoso
+fuentes:
+  - wikidata-q150068-erc
+notas: "Semilla Wikidata Q150068 (alta P571: 1931-03-19, exacta; color P465), pendiente del Registro (ADR-0021): tipo, número de inscripción, alta registral e histórico de denominaciones sin contrastar. Tipo partido: Wikidata (P31: partido político). Ámbito: Cataluña (en el 23J solo concurre en esa comunidad). Color: P465 de Wikidata. Ficha mínima: sin linaje ni composición."

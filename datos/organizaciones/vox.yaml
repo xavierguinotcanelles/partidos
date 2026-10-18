@@ -1,0 +1,16 @@
+id: vox
+nombre: "Vox"
+siglas: "VOX"
+tipo: partido
+ambito: estatal
+alta: "2013-12-14"
+alta_precision: exacta
+color: "#63BE21"
+wikidata: Q15630787
+nombres:
+  - nombre: "Vox"
+    siglas: "VOX"
+estado: dudoso
+fuentes:
+  - wikidata-q15630787-vox
+notas: "Semilla Wikidata Q15630787 (alta P571: 2013-12-14, exacta; color P465), pendiente del Registro (ADR-0021): tipo, número de inscripción, alta registral e histórico de denominaciones sin contrastar. Tipo partido: Wikidata (P31: partido político, movimiento político). Color: P465 de Wikidata. Ficha mínima: sin linaje ni composición."

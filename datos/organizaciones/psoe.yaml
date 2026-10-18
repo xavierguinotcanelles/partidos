@@ -1,0 +1,16 @@
+id: psoe
+nombre: "Partido Socialista Obrero Español"
+siglas: "PSOE"
+tipo: partido
+ambito: estatal
+alta: "1879-05-02"
+alta_precision: exacta
+color: "#EF1C27"
+wikidata: Q138198
+nombres:
+  - nombre: "Partido Socialista Obrero Español"
+    siglas: "PSOE"
+estado: dudoso
+fuentes:
+  - wikidata-q138198-psoe
+notas: "Semilla Wikidata Q138198 (alta P571: 1879-05-02, exacta; color P465), pendiente del Registro (ADR-0021): tipo, número de inscripción, alta registral e histórico de denominaciones sin contrastar. Tipo partido: Wikidata (P31: partido político, movimiento político). Color: P465 de Wikidata. Ficha mínima: sin linaje ni composición."

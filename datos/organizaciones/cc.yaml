@@ -1,0 +1,16 @@
+id: cc
+nombre: "Coalición Canaria"
+siglas: "CC"
+tipo: partido
+ambito: autonomico
+alta: "1993"
+alta_precision: anio
+color: "#FFD700"
+wikidata: Q1104327
+nombres:
+  - nombre: "Coalición Canaria"
+    siglas: "CC"
+estado: dudoso
+fuentes:
+  - wikidata-q1104327-cc
+notas: "Semilla Wikidata Q1104327 (alta P571: 1993, anio; color P465), pendiente del Registro (ADR-0021): tipo, número de inscripción, alta registral e histórico de denominaciones sin contrastar. Tipo partido: Wikidata (P31: partido político, movimiento político), pese al nombre; sin contrastar con el Registro. La candidatura del 23J se proclama «COALICIÓN CANARIA (CCa)». Ámbito: Canarias. Color: P465 de Wikidata. Ficha mínima: sin linaje ni composición."

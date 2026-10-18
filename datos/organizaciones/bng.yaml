@@ -1,0 +1,16 @@
+id: bng
+nombre: "Bloque Nacionalista Galego"
+siglas: "BNG"
+tipo: partido
+ambito: autonomico
+alta: "1982-09-26"
+alta_precision: exacta
+color: "#A2C7E4"
+wikidata: Q885433
+nombres:
+  - nombre: "Bloque Nacionalista Galego"
+    siglas: "BNG"
+estado: dudoso
+fuentes:
+  - wikidata-q885433-bng
+notas: "Semilla Wikidata Q885433 (alta P571: 1982-09-26, exacta; color P465), pendiente del Registro (ADR-0021): tipo, número de inscripción, alta registral e histórico de denominaciones sin contrastar. Tipo partido: Wikidata da dos P31 en conflicto (coalición política y partido político gallego); se toma partido, dudoso, hasta el Registro. Wikidata no tiene etiqueta en español (el nombre es el proclamado en 2023). Ámbito: Galicia. Color: P465 de Wikidata. Ficha mínima: sin linaje ni composición."

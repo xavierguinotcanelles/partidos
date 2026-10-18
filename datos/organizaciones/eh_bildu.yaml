@@ -1,0 +1,16 @@
+id: eh_bildu
+nombre: "Euskal Herria Bildu"
+siglas: "EH Bildu"
+tipo: coalicion
+ambito: autonomico
+alta: "2012"
+alta_precision: anio
+color: "#00AC8E"
+wikidata: Q1029761
+nombres:
+  - nombre: "Euskal Herria Bildu"
+    siglas: "EH Bildu"
+estado: dudoso
+fuentes:
+  - wikidata-q1029761-eh-bildu
+notas: "Semilla Wikidata Q1029761 (alta P571: 2012, anio; color P465), pendiente del Registro (ADR-0021): tipo, número de inscripción, alta registral e histórico de denominaciones sin contrastar. Tipo coalición: Wikidata (P31: coalición electoral, coalición, partido mayoritario; P527 con cuatro componentes), sin contrastar con el Registro: la denominación proclamada es «EUSKAL HERRIA BILDU (EH Bildu)» y no dice si es coalición o partido. Ámbito: País Vasco y Navarra. Color: P465 de Wikidata. Ficha mínima: sin linaje ni composición."
