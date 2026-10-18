@@ -1,2 +1,8 @@
 id,eleccion,organizacion,denominacion,siglas,estado,nota
 2023-07-23-generales-sumar,2023-07-23-generales,sumar,SUMAR,SUMAR,confirmado,Denominación estatal de las 29 Juntas que proclaman SUMAR (SUMAR); Interior acumula en el código nacional 000010 las ocho candidaturas territoriales
+2023-07-23-generales-pp,2023-07-23-generales,pp,PARTIDO POPULAR,PP,confirmado,"Denominación proclamada en las Juntas del Congreso (PARTIDO POPULAR); código nacional 000005 de Interior; acumulan en él los códigos 000048 (PARTIDO POPULAR / PARTIT POPULAR), 000056 (PARTIT POPULAR / PARTIDO POPULAR)"
+2023-07-23-generales-jxcat_junts,2023-07-23-generales,jxcat_junts,JUNTS PER CATALUNYA-JUNTS,JxCAT-JUNTS,confirmado,Denominación proclamada en las Juntas de Lleida y Tarragona (las de Barcelona y Girona difieren: ver sus listas); código nacional 000057 de Interior
+2023-07-23-generales-upn,2023-07-23-generales,upn,UNIÓN DEL PUEBLO NAVARRO,UPN,confirmado,Denominación proclamada en las Juntas del Congreso (UNIÓN DEL PUEBLO NAVARRO); código nacional 000074 de Interior
+2023-07-23-generales-par,2023-07-23-generales,par,PARTIDO ARAGONÉS,PAR,confirmado,Denominación proclamada en las Juntas del Congreso (PARTIDO ARAGONÉS); código nacional 000024 de Interior
+2023-07-23-generales-partido_humanista,2023-07-23-generales,partido_humanista,PARTIDO HUMANISTA,PH,confirmado,Denominación proclamada en las Juntas del Congreso (PARTIDO HUMANISTA); código nacional 000070 de Interior
+2023-07-23-generales-pdecat,2023-07-23-generales,pdecat,PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU,PDeCAT-E-CiU,confirmado,Denominación proclamada en las Juntas del Congreso (PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU); código nacional 000055 de Interior
